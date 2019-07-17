@@ -1,0 +1,26 @@
+14:36:09.289 karate.env system property was: dlab03 
+14:36:09.470 config.eventID1 Name: 2a2afcae-1942-4935-a2af-796d2a701188 
+14:36:09.483 config.rd1: 76119 
+14:36:09.507 config.date: 2019-07-16T14:36:09Z 
+14:36:09.532 config.date1: 2019-07-18 
+14:36:09.533 config.date1: 2019-07-16 
+14:36:09.643 [print] 2019-07-16T14:36:09Z
+14:36:09.646 [print] 76119
+14:36:09.648 [print] 76119
+14:36:09.650 [print] StartDate:2019-07-16
+14:36:09.655 [print] EndDate:2019-07-18
+14:36:09.669 [print] history_url:http://historyprocessor-dlab03-nmd.dev.px-npe01.cf.t-mobile.com/dnd/v1/notification?keys=2a2afcae-1942-4935-a2af-796d2a701188
+14:36:09.754 [print] {
+  "Shipping_StateCode": "CA",
+  "Shipping_Country": "US",
+  "Exp_TemplateID": "ORDERSHIPPEDNOTRADEIN",
+  "EventType": "OrderPickedUp"
+}
+
+14:36:09.772 [print]
+14:36:09.774 [print]
+14:36:09.777 [print] ORDERSHIPPEDNOTRADEIN
+14:36:09.780 [print] OrderPickedUp
+14:36:43.265 [print]
+14:36:43.267 [print]
+14:36:43.270 [print]

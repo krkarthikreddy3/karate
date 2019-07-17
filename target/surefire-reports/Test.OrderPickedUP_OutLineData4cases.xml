@@ -1,0 +1,410 @@
+<testsuite failures="0" name="Test/OrderPickedUP_OutLineData4cases.feature" skipped="0" tests="4" time="133.173769">
+  <testcase classname="Test.OrderPickedUP_OutLineData4cases" name="'OutLine_Testcase_1'" time="33.663922">
+    <system-out>* def request_uuid = eventID1 ............................................. passed
+* def request_Date = date ................................................. passed
+* print request_Date ...................................................... passed
+* print rd1 = rd1 ......................................................... passed
+* print rd1 ............................................................... passed
+* def startDate = startDate ............................................... passed
+* print "StartDate:"+ startDate ........................................... passed
+* def endDate = endDate ................................................... passed
+* print "EndDate:"+ endDate ............................................... passed
+* def Event_Type = "OrderPickedUp" ........................................ passed
+* def Datalist = '5' ...................................................... passed
+* def Expected_sms = "Your T-Mobile order# " + rd1 + " has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device." . passed
+* def history_url = history ............................................... passed
+* print "history_url:"+ history_url ....................................... passed
+* def data = read('classpath:OrderPickedUP.json') ......................... passed
+* def Deepresponse = call read('../SubProcess/Deep_SubProcess.feature') ... passed
+* match  Deepresponse.DeepStatus == "Passed" .............................. passed
+* def HistoryData = call read('../SubProcess/History_Subprocess.feature') . passed
+* def HistoryResponse = HistoryData.req ................................... passed
+* def SMS_Data = call read('../SubProcess/SMS_Subprocess.feature') ........ passed
+* def extracted_sms = SMS_Data.extracted_sms .............................. passed
+* def extracted_sms1 = SMS_Data.extracted_sms1 ............................ passed
+* match extracted_sms == Expected_sms ..................................... passed
+* match extracted_sms1 == Expected_sms .................................... passed
+* def Email_Data = call read('../SubProcess/Email_Subprocess.feature') .... passed
+* def actualShippingStateCode =   Email_Data.actualShippingStateCode ...... passed
+* def actualShippingCountry =   Email_Data.actualShippingCountry .......... passed
+* def actualTemplateId =   Email_Data.actualTemplateId .................... passed
+* def actualShippingStateCode_1 =   Email_Data.actualShippingStateCode_1 .. passed
+* def actualShippingCountry1 =   Email_Data.actualShippingCountry1 ........ passed
+* def actualTemplateId1 =   Email_Data.actualTemplateId1 .................. passed
+* print  Shipping_StateCode ............................................... passed
+* print Shipping_Country .................................................. passed
+* print Exp_TemplateID .................................................... passed
+* match actualShippingStateCode == Shipping_StateCode ..................... passed
+* match actualShippingCountry == Shipping_Country ......................... passed
+* match actualTemplateId == Exp_TemplateID ................................ passed
+* match actualShippingStateCode_1 == Shipping_StateCode ................... passed
+* match actualShippingCountry1 == Shipping_Country ........................ passed
+* match actualTemplateId1 == Exp_TemplateID ............................... passed</system-out>
+  </testcase>
+  <testcase classname="Test.OrderPickedUP_OutLineData4cases" name="'OutLine_Testcase_2'" time="33.129632">
+    <system-out>* def request_uuid = eventID1 ............................................. passed
+* def request_Date = date ................................................. passed
+* print request_Date ...................................................... passed
+* print rd1 = rd1 ......................................................... passed
+* print rd1 ............................................................... passed
+* def startDate = startDate ............................................... passed
+* print "StartDate:"+ startDate ........................................... passed
+* def endDate = endDate ................................................... passed
+* print "EndDate:"+ endDate ............................................... passed
+* def Event_Type = "OrderPickedUp" ........................................ passed
+* def Datalist = '5' ...................................................... passed
+* def Expected_sms = "Your T-Mobile order# " + rd1 + " has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device." . passed
+* def history_url = history ............................................... passed
+* print "history_url:"+ history_url ....................................... passed
+* def data = read('classpath:OrderPickedUP.json') ......................... passed
+* def Deepresponse = call read('../SubProcess/Deep_SubProcess.feature') ... passed
+* match  Deepresponse.DeepStatus == "Passed" .............................. passed
+* def HistoryData = call read('../SubProcess/History_Subprocess.feature') . passed
+* def HistoryResponse = HistoryData.req ................................... passed
+* def SMS_Data = call read('../SubProcess/SMS_Subprocess.feature') ........ passed
+* def extracted_sms = SMS_Data.extracted_sms .............................. passed
+* def extracted_sms1 = SMS_Data.extracted_sms1 ............................ passed
+* match extracted_sms == Expected_sms ..................................... passed
+* match extracted_sms1 == Expected_sms .................................... passed
+* def Email_Data = call read('../SubProcess/Email_Subprocess.feature') .... passed
+* def actualShippingStateCode =   Email_Data.actualShippingStateCode ...... passed
+* def actualShippingCountry =   Email_Data.actualShippingCountry .......... passed
+* def actualTemplateId =   Email_Data.actualTemplateId .................... passed
+* def actualShippingStateCode_1 =   Email_Data.actualShippingStateCode_1 .. passed
+* def actualShippingCountry1 =   Email_Data.actualShippingCountry1 ........ passed
+* def actualTemplateId1 =   Email_Data.actualTemplateId1 .................. passed
+* print  Shipping_StateCode ............................................... passed
+* print Shipping_Country .................................................. passed
+* print Exp_TemplateID .................................................... passed
+* match actualShippingStateCode == Shipping_StateCode ..................... passed
+* match actualShippingCountry == Shipping_Country ......................... passed
+* match actualTemplateId == Exp_TemplateID ................................ passed
+* match actualShippingStateCode_1 == Shipping_StateCode ................... passed
+* match actualShippingCountry1 == Shipping_Country ........................ passed
+* match actualTemplateId1 == Exp_TemplateID ............................... passed
+* def request_uuid = eventID1 ............................................. passed
+* def request_Date = date ................................................. passed
+* print request_Date ...................................................... passed
+* print rd1 = rd1 ......................................................... passed
+* print rd1 ............................................................... passed
+* def startDate = startDate ............................................... passed
+* print "StartDate:"+ startDate ........................................... passed
+* def endDate = endDate ................................................... passed
+* print "EndDate:"+ endDate ............................................... passed
+* def Event_Type = "OrderPickedUp" ........................................ passed
+* def Datalist = '5' ...................................................... passed
+* def Expected_sms = "Your T-Mobile order# " + rd1 + " has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device." . passed
+* def history_url = history ............................................... passed
+* print "history_url:"+ history_url ....................................... passed
+* def data = read('classpath:OrderPickedUP.json') ......................... passed
+* def Deepresponse = call read('../SubProcess/Deep_SubProcess.feature') ... passed
+* match  Deepresponse.DeepStatus == "Passed" .............................. passed
+* def HistoryData = call read('../SubProcess/History_Subprocess.feature') . passed
+* def HistoryResponse = HistoryData.req ................................... passed
+* def SMS_Data = call read('../SubProcess/SMS_Subprocess.feature') ........ passed
+* def extracted_sms = SMS_Data.extracted_sms .............................. passed
+* def extracted_sms1 = SMS_Data.extracted_sms1 ............................ passed
+* match extracted_sms == Expected_sms ..................................... passed
+* match extracted_sms1 == Expected_sms .................................... passed
+* def Email_Data = call read('../SubProcess/Email_Subprocess.feature') .... passed
+* def actualShippingStateCode =   Email_Data.actualShippingStateCode ...... passed
+* def actualShippingCountry =   Email_Data.actualShippingCountry .......... passed
+* def actualTemplateId =   Email_Data.actualTemplateId .................... passed
+* def actualShippingStateCode_1 =   Email_Data.actualShippingStateCode_1 .. passed
+* def actualShippingCountry1 =   Email_Data.actualShippingCountry1 ........ passed
+* def actualTemplateId1 =   Email_Data.actualTemplateId1 .................. passed
+* print  Shipping_StateCode ............................................... passed
+* print Shipping_Country .................................................. passed
+* print Exp_TemplateID .................................................... passed
+* match actualShippingStateCode == Shipping_StateCode ..................... passed
+* match actualShippingCountry == Shipping_Country ......................... passed
+* match actualTemplateId == Exp_TemplateID ................................ passed
+* match actualShippingStateCode_1 == Shipping_StateCode ................... passed
+* match actualShippingCountry1 == Shipping_Country ........................ passed
+* match actualTemplateId1 == Exp_TemplateID ............................... passed</system-out>
+  </testcase>
+  <testcase classname="Test.OrderPickedUP_OutLineData4cases" name="'OutLine_Testcase_3'" time="33.265907">
+    <system-out>* def request_uuid = eventID1 ............................................. passed
+* def request_Date = date ................................................. passed
+* print request_Date ...................................................... passed
+* print rd1 = rd1 ......................................................... passed
+* print rd1 ............................................................... passed
+* def startDate = startDate ............................................... passed
+* print "StartDate:"+ startDate ........................................... passed
+* def endDate = endDate ................................................... passed
+* print "EndDate:"+ endDate ............................................... passed
+* def Event_Type = "OrderPickedUp" ........................................ passed
+* def Datalist = '5' ...................................................... passed
+* def Expected_sms = "Your T-Mobile order# " + rd1 + " has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device." . passed
+* def history_url = history ............................................... passed
+* print "history_url:"+ history_url ....................................... passed
+* def data = read('classpath:OrderPickedUP.json') ......................... passed
+* def Deepresponse = call read('../SubProcess/Deep_SubProcess.feature') ... passed
+* match  Deepresponse.DeepStatus == "Passed" .............................. passed
+* def HistoryData = call read('../SubProcess/History_Subprocess.feature') . passed
+* def HistoryResponse = HistoryData.req ................................... passed
+* def SMS_Data = call read('../SubProcess/SMS_Subprocess.feature') ........ passed
+* def extracted_sms = SMS_Data.extracted_sms .............................. passed
+* def extracted_sms1 = SMS_Data.extracted_sms1 ............................ passed
+* match extracted_sms == Expected_sms ..................................... passed
+* match extracted_sms1 == Expected_sms .................................... passed
+* def Email_Data = call read('../SubProcess/Email_Subprocess.feature') .... passed
+* def actualShippingStateCode =   Email_Data.actualShippingStateCode ...... passed
+* def actualShippingCountry =   Email_Data.actualShippingCountry .......... passed
+* def actualTemplateId =   Email_Data.actualTemplateId .................... passed
+* def actualShippingStateCode_1 =   Email_Data.actualShippingStateCode_1 .. passed
+* def actualShippingCountry1 =   Email_Data.actualShippingCountry1 ........ passed
+* def actualTemplateId1 =   Email_Data.actualTemplateId1 .................. passed
+* print  Shipping_StateCode ............................................... passed
+* print Shipping_Country .................................................. passed
+* print Exp_TemplateID .................................................... passed
+* match actualShippingStateCode == Shipping_StateCode ..................... passed
+* match actualShippingCountry == Shipping_Country ......................... passed
+* match actualTemplateId == Exp_TemplateID ................................ passed
+* match actualShippingStateCode_1 == Shipping_StateCode ................... passed
+* match actualShippingCountry1 == Shipping_Country ........................ passed
+* match actualTemplateId1 == Exp_TemplateID ............................... passed
+* def request_uuid = eventID1 ............................................. passed
+* def request_Date = date ................................................. passed
+* print request_Date ...................................................... passed
+* print rd1 = rd1 ......................................................... passed
+* print rd1 ............................................................... passed
+* def startDate = startDate ............................................... passed
+* print "StartDate:"+ startDate ........................................... passed
+* def endDate = endDate ................................................... passed
+* print "EndDate:"+ endDate ............................................... passed
+* def Event_Type = "OrderPickedUp" ........................................ passed
+* def Datalist = '5' ...................................................... passed
+* def Expected_sms = "Your T-Mobile order# " + rd1 + " has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device." . passed
+* def history_url = history ............................................... passed
+* print "history_url:"+ history_url ....................................... passed
+* def data = read('classpath:OrderPickedUP.json') ......................... passed
+* def Deepresponse = call read('../SubProcess/Deep_SubProcess.feature') ... passed
+* match  Deepresponse.DeepStatus == "Passed" .............................. passed
+* def HistoryData = call read('../SubProcess/History_Subprocess.feature') . passed
+* def HistoryResponse = HistoryData.req ................................... passed
+* def SMS_Data = call read('../SubProcess/SMS_Subprocess.feature') ........ passed
+* def extracted_sms = SMS_Data.extracted_sms .............................. passed
+* def extracted_sms1 = SMS_Data.extracted_sms1 ............................ passed
+* match extracted_sms == Expected_sms ..................................... passed
+* match extracted_sms1 == Expected_sms .................................... passed
+* def Email_Data = call read('../SubProcess/Email_Subprocess.feature') .... passed
+* def actualShippingStateCode =   Email_Data.actualShippingStateCode ...... passed
+* def actualShippingCountry =   Email_Data.actualShippingCountry .......... passed
+* def actualTemplateId =   Email_Data.actualTemplateId .................... passed
+* def actualShippingStateCode_1 =   Email_Data.actualShippingStateCode_1 .. passed
+* def actualShippingCountry1 =   Email_Data.actualShippingCountry1 ........ passed
+* def actualTemplateId1 =   Email_Data.actualTemplateId1 .................. passed
+* print  Shipping_StateCode ............................................... passed
+* print Shipping_Country .................................................. passed
+* print Exp_TemplateID .................................................... passed
+* match actualShippingStateCode == Shipping_StateCode ..................... passed
+* match actualShippingCountry == Shipping_Country ......................... passed
+* match actualTemplateId == Exp_TemplateID ................................ passed
+* match actualShippingStateCode_1 == Shipping_StateCode ................... passed
+* match actualShippingCountry1 == Shipping_Country ........................ passed
+* match actualTemplateId1 == Exp_TemplateID ............................... passed
+* def request_uuid = eventID1 ............................................. passed
+* def request_Date = date ................................................. passed
+* print request_Date ...................................................... passed
+* print rd1 = rd1 ......................................................... passed
+* print rd1 ............................................................... passed
+* def startDate = startDate ............................................... passed
+* print "StartDate:"+ startDate ........................................... passed
+* def endDate = endDate ................................................... passed
+* print "EndDate:"+ endDate ............................................... passed
+* def Event_Type = "OrderPickedUp" ........................................ passed
+* def Datalist = '5' ...................................................... passed
+* def Expected_sms = "Your T-Mobile order# " + rd1 + " has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device." . passed
+* def history_url = history ............................................... passed
+* print "history_url:"+ history_url ....................................... passed
+* def data = read('classpath:OrderPickedUP.json') ......................... passed
+* def Deepresponse = call read('../SubProcess/Deep_SubProcess.feature') ... passed
+* match  Deepresponse.DeepStatus == "Passed" .............................. passed
+* def HistoryData = call read('../SubProcess/History_Subprocess.feature') . passed
+* def HistoryResponse = HistoryData.req ................................... passed
+* def SMS_Data = call read('../SubProcess/SMS_Subprocess.feature') ........ passed
+* def extracted_sms = SMS_Data.extracted_sms .............................. passed
+* def extracted_sms1 = SMS_Data.extracted_sms1 ............................ passed
+* match extracted_sms == Expected_sms ..................................... passed
+* match extracted_sms1 == Expected_sms .................................... passed
+* def Email_Data = call read('../SubProcess/Email_Subprocess.feature') .... passed
+* def actualShippingStateCode =   Email_Data.actualShippingStateCode ...... passed
+* def actualShippingCountry =   Email_Data.actualShippingCountry .......... passed
+* def actualTemplateId =   Email_Data.actualTemplateId .................... passed
+* def actualShippingStateCode_1 =   Email_Data.actualShippingStateCode_1 .. passed
+* def actualShippingCountry1 =   Email_Data.actualShippingCountry1 ........ passed
+* def actualTemplateId1 =   Email_Data.actualTemplateId1 .................. passed
+* print  Shipping_StateCode ............................................... passed
+* print Shipping_Country .................................................. passed
+* print Exp_TemplateID .................................................... passed
+* match actualShippingStateCode == Shipping_StateCode ..................... passed
+* match actualShippingCountry == Shipping_Country ......................... passed
+* match actualTemplateId == Exp_TemplateID ................................ passed
+* match actualShippingStateCode_1 == Shipping_StateCode ................... passed
+* match actualShippingCountry1 == Shipping_Country ........................ passed
+* match actualTemplateId1 == Exp_TemplateID ............................... passed</system-out>
+  </testcase>
+  <testcase classname="Test.OrderPickedUP_OutLineData4cases" name="'OutLine_Testcase_4'" time="33.114309">
+    <system-out>* def request_uuid = eventID1 ............................................. passed
+* def request_Date = date ................................................. passed
+* print request_Date ...................................................... passed
+* print rd1 = rd1 ......................................................... passed
+* print rd1 ............................................................... passed
+* def startDate = startDate ............................................... passed
+* print "StartDate:"+ startDate ........................................... passed
+* def endDate = endDate ................................................... passed
+* print "EndDate:"+ endDate ............................................... passed
+* def Event_Type = "OrderPickedUp" ........................................ passed
+* def Datalist = '5' ...................................................... passed
+* def Expected_sms = "Your T-Mobile order# " + rd1 + " has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device." . passed
+* def history_url = history ............................................... passed
+* print "history_url:"+ history_url ....................................... passed
+* def data = read('classpath:OrderPickedUP.json') ......................... passed
+* def Deepresponse = call read('../SubProcess/Deep_SubProcess.feature') ... passed
+* match  Deepresponse.DeepStatus == "Passed" .............................. passed
+* def HistoryData = call read('../SubProcess/History_Subprocess.feature') . passed
+* def HistoryResponse = HistoryData.req ................................... passed
+* def SMS_Data = call read('../SubProcess/SMS_Subprocess.feature') ........ passed
+* def extracted_sms = SMS_Data.extracted_sms .............................. passed
+* def extracted_sms1 = SMS_Data.extracted_sms1 ............................ passed
+* match extracted_sms == Expected_sms ..................................... passed
+* match extracted_sms1 == Expected_sms .................................... passed
+* def Email_Data = call read('../SubProcess/Email_Subprocess.feature') .... passed
+* def actualShippingStateCode =   Email_Data.actualShippingStateCode ...... passed
+* def actualShippingCountry =   Email_Data.actualShippingCountry .......... passed
+* def actualTemplateId =   Email_Data.actualTemplateId .................... passed
+* def actualShippingStateCode_1 =   Email_Data.actualShippingStateCode_1 .. passed
+* def actualShippingCountry1 =   Email_Data.actualShippingCountry1 ........ passed
+* def actualTemplateId1 =   Email_Data.actualTemplateId1 .................. passed
+* print  Shipping_StateCode ............................................... passed
+* print Shipping_Country .................................................. passed
+* print Exp_TemplateID .................................................... passed
+* match actualShippingStateCode == Shipping_StateCode ..................... passed
+* match actualShippingCountry == Shipping_Country ......................... passed
+* match actualTemplateId == Exp_TemplateID ................................ passed
+* match actualShippingStateCode_1 == Shipping_StateCode ................... passed
+* match actualShippingCountry1 == Shipping_Country ........................ passed
+* match actualTemplateId1 == Exp_TemplateID ............................... passed
+* def request_uuid = eventID1 ............................................. passed
+* def request_Date = date ................................................. passed
+* print request_Date ...................................................... passed
+* print rd1 = rd1 ......................................................... passed
+* print rd1 ............................................................... passed
+* def startDate = startDate ............................................... passed
+* print "StartDate:"+ startDate ........................................... passed
+* def endDate = endDate ................................................... passed
+* print "EndDate:"+ endDate ............................................... passed
+* def Event_Type = "OrderPickedUp" ........................................ passed
+* def Datalist = '5' ...................................................... passed
+* def Expected_sms = "Your T-Mobile order# " + rd1 + " has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device." . passed
+* def history_url = history ............................................... passed
+* print "history_url:"+ history_url ....................................... passed
+* def data = read('classpath:OrderPickedUP.json') ......................... passed
+* def Deepresponse = call read('../SubProcess/Deep_SubProcess.feature') ... passed
+* match  Deepresponse.DeepStatus == "Passed" .............................. passed
+* def HistoryData = call read('../SubProcess/History_Subprocess.feature') . passed
+* def HistoryResponse = HistoryData.req ................................... passed
+* def SMS_Data = call read('../SubProcess/SMS_Subprocess.feature') ........ passed
+* def extracted_sms = SMS_Data.extracted_sms .............................. passed
+* def extracted_sms1 = SMS_Data.extracted_sms1 ............................ passed
+* match extracted_sms == Expected_sms ..................................... passed
+* match extracted_sms1 == Expected_sms .................................... passed
+* def Email_Data = call read('../SubProcess/Email_Subprocess.feature') .... passed
+* def actualShippingStateCode =   Email_Data.actualShippingStateCode ...... passed
+* def actualShippingCountry =   Email_Data.actualShippingCountry .......... passed
+* def actualTemplateId =   Email_Data.actualTemplateId .................... passed
+* def actualShippingStateCode_1 =   Email_Data.actualShippingStateCode_1 .. passed
+* def actualShippingCountry1 =   Email_Data.actualShippingCountry1 ........ passed
+* def actualTemplateId1 =   Email_Data.actualTemplateId1 .................. passed
+* print  Shipping_StateCode ............................................... passed
+* print Shipping_Country .................................................. passed
+* print Exp_TemplateID .................................................... passed
+* match actualShippingStateCode == Shipping_StateCode ..................... passed
+* match actualShippingCountry == Shipping_Country ......................... passed
+* match actualTemplateId == Exp_TemplateID ................................ passed
+* match actualShippingStateCode_1 == Shipping_StateCode ................... passed
+* match actualShippingCountry1 == Shipping_Country ........................ passed
+* match actualTemplateId1 == Exp_TemplateID ............................... passed
+* def request_uuid = eventID1 ............................................. passed
+* def request_Date = date ................................................. passed
+* print request_Date ...................................................... passed
+* print rd1 = rd1 ......................................................... passed
+* print rd1 ............................................................... passed
+* def startDate = startDate ............................................... passed
+* print "StartDate:"+ startDate ........................................... passed
+* def endDate = endDate ................................................... passed
+* print "EndDate:"+ endDate ............................................... passed
+* def Event_Type = "OrderPickedUp" ........................................ passed
+* def Datalist = '5' ...................................................... passed
+* def Expected_sms = "Your T-Mobile order# " + rd1 + " has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device." . passed
+* def history_url = history ............................................... passed
+* print "history_url:"+ history_url ....................................... passed
+* def data = read('classpath:OrderPickedUP.json') ......................... passed
+* def Deepresponse = call read('../SubProcess/Deep_SubProcess.feature') ... passed
+* match  Deepresponse.DeepStatus == "Passed" .............................. passed
+* def HistoryData = call read('../SubProcess/History_Subprocess.feature') . passed
+* def HistoryResponse = HistoryData.req ................................... passed
+* def SMS_Data = call read('../SubProcess/SMS_Subprocess.feature') ........ passed
+* def extracted_sms = SMS_Data.extracted_sms .............................. passed
+* def extracted_sms1 = SMS_Data.extracted_sms1 ............................ passed
+* match extracted_sms == Expected_sms ..................................... passed
+* match extracted_sms1 == Expected_sms .................................... passed
+* def Email_Data = call read('../SubProcess/Email_Subprocess.feature') .... passed
+* def actualShippingStateCode =   Email_Data.actualShippingStateCode ...... passed
+* def actualShippingCountry =   Email_Data.actualShippingCountry .......... passed
+* def actualTemplateId =   Email_Data.actualTemplateId .................... passed
+* def actualShippingStateCode_1 =   Email_Data.actualShippingStateCode_1 .. passed
+* def actualShippingCountry1 =   Email_Data.actualShippingCountry1 ........ passed
+* def actualTemplateId1 =   Email_Data.actualTemplateId1 .................. passed
+* print  Shipping_StateCode ............................................... passed
+* print Shipping_Country .................................................. passed
+* print Exp_TemplateID .................................................... passed
+* match actualShippingStateCode == Shipping_StateCode ..................... passed
+* match actualShippingCountry == Shipping_Country ......................... passed
+* match actualTemplateId == Exp_TemplateID ................................ passed
+* match actualShippingStateCode_1 == Shipping_StateCode ................... passed
+* match actualShippingCountry1 == Shipping_Country ........................ passed
+* match actualTemplateId1 == Exp_TemplateID ............................... passed
+* def request_uuid = eventID1 ............................................. passed
+* def request_Date = date ................................................. passed
+* print request_Date ...................................................... passed
+* print rd1 = rd1 ......................................................... passed
+* print rd1 ............................................................... passed
+* def startDate = startDate ............................................... passed
+* print "StartDate:"+ startDate ........................................... passed
+* def endDate = endDate ................................................... passed
+* print "EndDate:"+ endDate ............................................... passed
+* def Event_Type = "OrderPickedUp" ........................................ passed
+* def Datalist = '5' ...................................................... passed
+* def Expected_sms = "Your T-Mobile order# " + rd1 + " has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device." . passed
+* def history_url = history ............................................... passed
+* print "history_url:"+ history_url ....................................... passed
+* def data = read('classpath:OrderPickedUP.json') ......................... passed
+* def Deepresponse = call read('../SubProcess/Deep_SubProcess.feature') ... passed
+* match  Deepresponse.DeepStatus == "Passed" .............................. passed
+* def HistoryData = call read('../SubProcess/History_Subprocess.feature') . passed
+* def HistoryResponse = HistoryData.req ................................... passed
+* def SMS_Data = call read('../SubProcess/SMS_Subprocess.feature') ........ passed
+* def extracted_sms = SMS_Data.extracted_sms .............................. passed
+* def extracted_sms1 = SMS_Data.extracted_sms1 ............................ passed
+* match extracted_sms == Expected_sms ..................................... passed
+* match extracted_sms1 == Expected_sms .................................... passed
+* def Email_Data = call read('../SubProcess/Email_Subprocess.feature') .... passed
+* def actualShippingStateCode =   Email_Data.actualShippingStateCode ...... passed
+* def actualShippingCountry =   Email_Data.actualShippingCountry .......... passed
+* def actualTemplateId =   Email_Data.actualTemplateId .................... passed
+* def actualShippingStateCode_1 =   Email_Data.actualShippingStateCode_1 .. passed
+* def actualShippingCountry1 =   Email_Data.actualShippingCountry1 ........ passed
+* def actualTemplateId1 =   Email_Data.actualTemplateId1 .................. passed
+* print  Shipping_StateCode ............................................... passed
+* print Shipping_Country .................................................. passed
+* print Exp_TemplateID .................................................... passed
+* match actualShippingStateCode == Shipping_StateCode ..................... passed
+* match actualShippingCountry == Shipping_Country ......................... passed
+* match actualTemplateId == Exp_TemplateID ................................ passed
+* match actualShippingStateCode_1 == Shipping_StateCode ................... passed
+* match actualShippingCountry1 == Shipping_Country ........................ passed
+* match actualTemplateId1 == Exp_TemplateID ............................... passed</system-out>
+  </testcase>
+</testsuite>

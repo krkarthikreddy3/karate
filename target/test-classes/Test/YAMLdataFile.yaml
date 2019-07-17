@@ -1,0 +1,4 @@
+Shipping_StateCode: CA
+Shipping_Country: US
+Exp_TemplateID: ORDERSHIPPEDNOTRADEIN
+EventType: OrderPickedUp

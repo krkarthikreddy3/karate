@@ -1,0 +1,51 @@
+14:36:43.382 request:
+1 > POST https://deep-gateway-development.dev.px-npe01.cf.t-mobile.com/dlab03/deep/v1/events/OrderPickedUp
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 1951
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: deep-gateway-development.dev.px-npe01.cf.t-mobile.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"auditInfo":{"orderId":"6109698182_Test"},"eventId":"bc86f63a-7b0d-4707-a898-b67d077d8687","eventProducerId":"OrderFulfillmentDTD","eventTime":"2019-07-16T14:36:43Z","eventType":"OrderPickedUp","payload":{"orderId":"23758","metadata":{"lastModified":"2019-07-03T04:47:34.505-07:00"},"keys":[{}],"salesInfo":{"senderSystemId":"MYTMO","salesChannel":"WEB","applicationId":"ESERVICE"},"creationTime":"2019-07-16T14:36:43Z","shippingDetails":[{"trackingNumber":"1ZW0Y5911361496530","freightCarrier":"UPS","description":"UPSExpeditedNextDayAir","shipTo":{"firstName":"ALLASANI"},"estimatedDelivery":{"startDate":"2019-07-16","endDate":"2019-07-18"}}],"status":"Running","orderLineCollection":{"orderLines":[{"orderLineId":"1","offer":{"productType":"Device","productSubTypes":["Handset"],"unitPrice":649.99,"offerDescription":"TestJ-BlackOnyx-32GB","products":[{"variants":[{"sku":"888462500470"}]}]},"lineId":"1","quantity":1,"transactionType":"CHANGEDEVICE","fulfillmentType":"SHP"},{"orderLineId":"2","offer":{},"lineId":"1","quantity":1,"transactionType":"CHANGEDEVICE"}]},"accounts":[{"accountNumber":"960698182","accountType":"INDIVIDUAL","accountSubType":"INDIVIDUAL_REGULAR","contactFirstName":"John","contactFamilyName":"Legere"}],"lines":[{"lineId":"1","phoneNumber":"4046698182","promotions":[{}],"eipIndicator":false}],"customerProfile":{"preferredLanguage":"en","phoneNumbers":[{"phoneNumber":"4046698182","purposes":["Receipt"]}],"emailCommunications":[{"emailAddress":"order.fulfillment.tmo@gmail.com","purposes":["Receipt"]}]},"addresses":[{"addressLine1":"One Ravinia Drive","addressLine2":"opp: perimeter mall","addressLine3":"BLOCK #3","cityName":"Atlanta","stateCode":"TX","zip":"30346","countryCode":"US","purposes":["Shipping"]},{"addressLine1":"1 RAVINIA DR","addressLine2":"Building #2","addressLine3":"7th Floor","cityName":"Atlanta","stateCode":"GA","zip":"30346","countryCode":"US","purposes":["Billing"]}]},"specifications":[]}
+
+14:36:44.654 response time in milliseconds: 1271.85
+1 < 200
+1 < Content-Length: 102
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Tue, 16 Jul 2019 18:36:44 GMT
+1 < X-Application-Context: deep-gateway:development,cloud:1
+1 < X-Vcap-Request-Id: 91f22632-fc70-49ca-5c21-01915d68a93a
+{"message":"Message Published Successfully","status":"200","timestamp":"Tue Jul 16 18:36:44 UTC 2019"}
+
+14:36:44.658 [print] DeepStatus: Passed
+14:36:45.659 0 
+14:36:46.660 1.0 
+14:36:47.662 2.0 
+14:36:48.663 3.0 
+14:36:49.663 4.0 
+14:36:50.664 5.0 
+14:36:51.664 6.0 
+14:36:52.665 7.0 
+14:36:53.666 8.0 
+14:36:54.668 9.0 
+14:36:55.669 10.0 
+14:36:56.669 11.0 
+14:36:57.670 12.0 
+14:36:58.670 13.0 
+14:36:59.670 14.0 
+14:37:00.670 15.0 
+14:37:01.670 16.0 
+14:37:02.671 17.0 
+14:37:03.672 18.0 
+14:37:04.672 19.0 
+14:37:05.672 20.0 
+14:37:06.673 21.0 
+14:37:07.673 22.0 
+14:37:08.673 23.0 
+14:37:09.675 24.0 
+14:37:10.676 25.0 
+14:37:11.677 26.0 
+14:37:12.677 27.0 
+14:37:13.678 28.0 
+14:37:14.679 29.0 
+14:37:15.680 30.0 

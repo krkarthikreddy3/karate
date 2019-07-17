@@ -1,0 +1,169 @@
+{
+    "auditInfo" : {
+        "orderId" : "6109051202"
+    },
+     "eventId" : "#(request_uuid)",
+    "eventProducerId" : "OrderFulfillmentDTD",
+    "eventTime" : "#(request_Date)",
+    "eventType" : "#(EventType)",
+    "payload" : {
+       "orderId" : "#(rd1)",
+            "metadata" : {
+            "lastModified" : "2019-07-16T11:17:52.182-07:00"
+        },
+        "keys" : [
+            { }
+        ],
+        "salesInfo" : {
+            "senderSystemId" : "MYTMO",
+            "salesChannel" : "WEB",
+            "applicationId" : "ESERVICE"
+        },
+        "creationTime" : "2019-07-16T15:47:34Z",
+        "shippingDetails" : [
+            {
+                "trackingNumber" : "1ZW0Y5911361496530",
+                "freightCarrier" : "UPS",
+                "description" : "UPS Ground (5-7 business days)",
+                "shipTo" : {
+                    "firstName" : "ALLASANI"
+                },
+                "estimatedDelivery" : {
+                    "startDate" : "2019-07-16",
+                    "endDate" : "2019-07-18"
+                }
+            }
+        ],
+        "status" : "Running",
+        "orderLineCollection" : {
+            "orderLines" : [
+                {
+                    "orderLineId" : "1",
+                    "offer" : {
+                        "productType" : "Device",
+                        "productSubTypes" : [
+                            "Handset"
+                        ],
+                        "unitPrice" : 649.99,
+                        "offerDescription" : "TestJ-BlackOnyx-32GB",
+                        "products" : [
+                            {
+                                "variants" : [
+                                    {
+                                        "sku" : "888462500470"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "lineId" : "1",
+                    "quantity" : 1,
+                    "transactionType" : "CHANGEDEVICE",
+                    "imei" : "353300061234560",
+                    "fulfillmentType" : "SHP"
+                },
+                {
+                    "orderLineId" : "2",
+                    "offer" : {
+                        "productType" : "Service",
+                        "productSubTypes" : [
+                            "Handset"
+                        ]
+                    },
+                    "lineId" : "1",
+                    "quantity" : 1,
+                    "transactionType" : "CHANGEDEVICE"
+                },
+                {
+                    "orderLineId" : "3",
+                    "offer" : {
+                        "productType" : "Device",
+                        "productSubTypes" : [
+                            "DeviceTradeIn"
+                        ],
+                        "products" : [
+                            {
+                                "manufacturer" : "Apple",
+                                "model" : "iPhone 6s - Gold - 32GB"
+                            }
+                        ]
+                    },
+                    "lineId" : "1",
+                    "quantity" : 1,
+                    "transactionType" : "CHANGEDEVICE",
+                    "programType" : "DRP",
+                    "imei" : "313788005567432",
+                    "quoteAmount" : 0.0,
+                    "returnEffectivePeriod" : {
+                        "endTime" : "2019-08-15T23:59:59Z"
+                    }
+                }
+            ]
+        },
+        "accounts" : [
+            {
+                "accountNumber" : "960051202",
+                "accountType" : "INDIVIDUAL",
+                "accountSubType" : "INDIVIDUAL_REGULAR",
+                "contactFirstName" : "John",
+                "contactFamilyName" : "Legere"
+            }
+        ],
+        "lines" : [
+            {
+                "lineId" : "1",
+                "phoneNumber" : "4046051202",
+                "promotions" : [
+                    { }
+                ],
+                "eipIndicator" : false
+            }
+        ],
+        "customerProfile" : {
+            "preferredLanguage" : "en",
+            "phoneNumbers" : [
+                {
+                    "phoneNumber" : "4046051202",
+                    "purposes" : [
+                        "Receipt"
+                    ]
+                }
+            ],
+            "emailCommunications" : [
+                {
+                    "emailAddress" : "order.fulfillment.tmo@gmail.com",
+                    "purposes" : [
+                        "Receipt"
+                    ]
+                }
+            ]
+        },
+        "addresses" : [
+            {
+              "addressLine1" : "#(Shippingadres1)",
+                "addressLine2" : "opp: perimeter mall",
+                "addressLine3" : "BLOCK #3",
+                "cityName" : "#(ShippingCityName)",
+                "stateCode" : "#(Shipping_StateCode)",
+                "zip" : "#(ShippingZipCode)",
+                "countryCode" : "#(Shipping_Country)",
+                "purposes" : [
+                    "Shipping"
+                ]
+            },
+            {
+                "addressLine1" : "One Ravinia drive",
+                "addressLine2" : "Building1",
+                "addressLine3" : "7thfloor",
+                "cityName" : "Atlanta",
+                "stateCode" : "GA",
+                "zip" : "30346",
+                "countryCode" : "US",
+                "purposes" : [
+                    "Billing"
+                ]
+            }
+        ]
+    },
+    "specifications" : [ ]
+}

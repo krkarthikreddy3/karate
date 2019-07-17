@@ -1,0 +1,94 @@
+14:36:42.947 [print] <batch xmlns:pfx="http://services.tmobile.com/csi/email" xmlns:tib="http://www.tibco.com/bw/xslt/custom-functions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" profile="HSOS">
+  <template>
+    <content mfile="body.html" ref="ORDERSHIPPEDNOTRADEIN" type="text/html"/>
+    <header>
+      <from address="donotreply@t-mobile.com" name="T-Mobile USA"/>
+      <reply address="donotreply@t-mobile.com" name="T-Mobile USA"/>
+    </header>
+    <list>
+      <email id="20190716113612048ORDERSHIPPEDN" id2="ORDERSHIPPEDNOTRADEIN">
+        <rcpt address="notifications.test.events+960844689@gmail.com"/>
+        <pdata key="FullName" value="John Legere"/>
+        <pdata key="OrderNumber" value="69655"/>
+        <pdata key="OrderDate" value="7/16/2019"/>
+        <pdata key="UpgradeDeviceDescription" value="TestJ-BlackOnyx-32GB"/>
+        <pdata key="ShippingTrackingNumber" value="1ZW0Y5911361496530"/>
+        <pdata key="CarrierUrl" value="http://wwwapps.ups.com/WebTracking/track?HTMLVersion=5.0&amp;loc=en_US&amp;Requester=UPSHome&amp;WBPM_lid=homepage%2Fct1.html_pnl_trk&amp;track.x=Track&amp;trackNums=1ZW0Y5911361496530"/>
+        <pdata key="ShippingMethod" value="UPSExpeditedNextDayAir"/>
+        <pdata key="ShippingAddressLine1" value="One Ravinia Drive"/>
+        <pdata key="ShippingAddressLine2" value="opp: perimeter mall"/>
+        <pdata key="ShippingAddressLine3" value="BLOCK #3"/>
+        <pdata key="ShippingCityName" value="City1"/>
+        <pdata key="ShippingStateCode" value="GA"/>
+        <pdata key="ShippingZipCode" value="30345"/>
+        <pdata key="ShippingCountry" value="US"/>
+      </email>
+    </list>
+  </template>
+</batch>
+
+14:36:42.952 [print] <batch xmlns:pfx="http://services.tmobile.com/csi/email" xmlns:tib="http://www.tibco.com/bw/xslt/custom-functions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" profile="HSOS">
+  <template>
+    <content mfile="body.html" ref="ORDERSHIPPEDNOTRADEIN" type="text/html"/>
+    <header>
+      <from address="donotreply@t-mobile.com" name="T-Mobile USA"/>
+      <reply address="donotreply@t-mobile.com" name="T-Mobile USA"/>
+    </header>
+    <list>
+      <email id="20190716113612048ORDERSHIPPEDN" id2="ORDERSHIPPEDNOTRADEIN">
+        <rcpt address="notifications.test.events+960844689@gmail.com"/>
+        <pdata key="FullName" value="John Legere"/>
+        <pdata key="OrderNumber" value="69655"/>
+        <pdata key="OrderDate" value="7/16/2019"/>
+        <pdata key="UpgradeDeviceDescription" value="TestJ-BlackOnyx-32GB"/>
+        <pdata key="ShippingTrackingNumber" value="1ZW0Y5911361496530"/>
+        <pdata key="CarrierUrl" value="http://wwwapps.ups.com/WebTracking/track?HTMLVersion=5.0&amp;loc=en_US&amp;Requester=UPSHome&amp;WBPM_lid=homepage%2Fct1.html_pnl_trk&amp;track.x=Track&amp;trackNums=1ZW0Y5911361496530"/>
+        <pdata key="ShippingMethod" value="UPSExpeditedNextDayAir"/>
+        <pdata key="ShippingAddressLine1" value="One Ravinia Drive"/>
+        <pdata key="ShippingAddressLine2" value="opp: perimeter mall"/>
+        <pdata key="ShippingAddressLine3" value="BLOCK #3"/>
+        <pdata key="ShippingCityName" value="City1"/>
+        <pdata key="ShippingStateCode" value="GA"/>
+        <pdata key="ShippingZipCode" value="30345"/>
+        <pdata key="ShippingCountry" value="US"/>
+      </email>
+    </list>
+  </template>
+</batch>
+
+14:36:42.957 [print] ActualFullName:John Legere
+14:36:42.976 [print] ActualFullName:69655
+14:36:42.988 [print] ActualOrderDate:7/16/2019
+14:36:42.993 [print] ActualUpgradeDeviceDescription:TestJ-BlackOnyx-32GB
+14:36:43.003 [print] ActualShippingTrackingNumber:1ZW0Y5911361496530
+14:36:43.015 [print] ActualShippingMethod:UPSExpeditedNextDayAir
+14:36:43.025 [print] ActualShippingAddressLine1:One Ravinia Drive
+14:36:43.035 [print] ActualShippingAddressLine2:opp: perimeter mall
+14:36:43.045 [print] ActualShippingAddressLine3:BLOCK #3
+14:36:43.053 [print] ActualShippingCityName:City1
+14:36:43.062 [print] ActualShippingStateCode:GA
+14:36:43.071 [print] ActualShippingZipCode:30345
+14:36:43.081 [print] ActualShippingCountry:US
+14:36:43.089 [print] ActualTemplateId:ORDERSHIPPEDNOTRADEIN
+14:36:43.098 [print] ActualFullName1:John Legere
+14:36:43.108 [print] ActualOrderNumber11:69655
+14:36:43.117 [print] ActualOrderDate1:7/16/2019
+14:36:43.128 [print] ActualUpgradeDeviceDescription1:TestJ-BlackOnyx-32GB
+14:36:43.168 [print] ActualShippingTrackingNumber1:1ZW0Y5911361496530
+14:36:43.177 [print] ActualShippingMethod1:UPSExpeditedNextDayAir
+14:36:43.183 [print] ActualShippingAddressLine1_1:One Ravinia Drive
+14:36:43.186 [print] ActualShippingAddressLine2_1:opp: perimeter mall
+14:36:43.192 [print] ActualShippingAddressLine3_1:BLOCK #3
+14:36:43.205 [print] ActualShippingCityName1:City1
+14:36:43.210 [print] ActualShippingStateCode1:GA
+14:36:43.221 [print] ActualShippingZipCode1:30345
+14:36:43.244 [print] ActualShippingCountry1:US
+14:36:43.260 [print] ActualTemplateId1:ORDERSHIPPEDNOTRADEIN
+4:26:42.659 [print] ActualShippingAddressLine1_1:One Ravinia Drive
+14:26:42.666 [print] ActualShippingAddressLine2_1:opp: perimeter mall
+14:26:42.670 [print] ActualShippingAddressLine3_1:BLOCK #3
+14:26:42.675 [print] ActualShippingCityName1:Atlanta
+14:26:42.679 [print] ActualShippingStateCode1:CA
+14:26:42.683 [print] ActualShippingZipCode1:City2
+14:26:42.687 [print] ActualShippingCountry1:US
+14:26:42.692 [print] ActualTemplateId1:ORDERSHIPPEDTRADEIN

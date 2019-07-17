@@ -1,0 +1,16 @@
+14:36:09.289 karate.env system property was: dlab03 
+14:36:09.470 config.eventID1 Name: 63decfea-1ac6-4c81-acc3-a88d7ea97ca4 
+14:36:09.482 config.rd1: 69655 
+14:36:09.507 config.date: 2019-07-16T14:36:09Z 
+14:36:09.531 config.date1: 2019-07-18 
+14:36:09.532 config.date1: 2019-07-16 
+14:36:09.642 [print] 2019-07-16T14:36:09Z
+14:36:09.647 [print] 69655
+14:36:09.648 [print] 69655
+14:36:09.650 [print] StartDate:2019-07-16
+14:36:09.653 [print] EndDate:2019-07-18
+14:36:09.669 [print] history_url:http://historyprocessor-dlab03-nmd.dev.px-npe01.cf.t-mobile.com/dnd/v1/notification?keys=63decfea-1ac6-4c81-acc3-a88d7ea97ca4
+14:36:43.324 [print] GA
+14:36:43.324 [print] US
+14:36:43.325 [print] ORDERSHIPPEDNOTRADEIN
+rocess.feature:25 - status code was: 500, expected: 200, response time: 985, url: https://deep-gateway-development.dev.px-npe01.cf.t-mobile.com/dlab03/deep/v1/events/OrderPickedUp, response: {"timestamp":"2019-07-16T18:25:37.124+0000","status":500,"error":"Internal Server Error","message":"No message available","path":"/deep/v1/events/OrderPickedUp"}

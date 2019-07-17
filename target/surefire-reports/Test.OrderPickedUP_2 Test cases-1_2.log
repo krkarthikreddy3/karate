@@ -1,0 +1,15 @@
+14:36:09.289 karate.env system property was: dlab03 
+14:36:09.470 config.eventID1 Name: 7679a564-723c-4fb2-aab3-029228fa6c35 
+14:36:09.482 config.rd1: 96452 
+14:36:09.507 config.date: 2019-07-16T14:36:09Z 
+14:36:09.529 config.date1: 2019-07-18 
+14:36:09.532 config.date1: 2019-07-16 
+14:36:09.642 [print] 2019-07-16T14:36:09Z
+14:36:09.646 [print] 96452
+14:36:09.646 [print] 96452
+14:36:09.650 [print] StartDate:2019-07-16
+14:36:09.654 [print] EndDate:2019-07-18
+14:36:09.669 [print] history_url:http://historyprocessor-dlab03-nmd.dev.px-npe01.cf.t-mobile.com/dnd/v1/notification?keys=7679a564-723c-4fb2-aab3-029228fa6c35
+14:36:43.321 [print] CA
+14:36:43.321 [print] US
+14:36:43.322 [print] ORDERSHIPPEDTRADEIN

@@ -1,0 +1,2 @@
+Shipping_StateCode,Shipping_Country,Exp_TemplateID,EventType,TestCase
+TX,US,ORDERSHIPPEDNOTRADEIN,OrderPickedUp,CSV_Data_Testcase

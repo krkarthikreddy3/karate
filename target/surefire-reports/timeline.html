@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-2"},{"id":2,"content":"ForkJoinPool-1-worker-5"},{"id":3,"content":"ForkJoinPool-1-worker-3"},{"id":4,"content":"ForkJoinPool-1-worker-1"},{"id":5,"content":"ForkJoinPool-1-worker-4"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"OrderPickedUP_2 Test cases[1.1:90]","start":658,"end":34356,"title":"OrderPickedUP_2 Test cases[1.1:90] 658-34356"},{"id":2,"group":2,"content":"OrderPickedUP_2 Test cases[1.2:91]","start":658,"end":34353,"title":"OrderPickedUP_2 Test cases[1.2:91] 658-34353"},{"id":3,"group":3,"content":"OrderPickedUP_CSVData[1.1:22]","start":34299,"end":67492,"title":"OrderPickedUP_CSVData[1.1:22] 34299-67492"},{"id":4,"group":3,"content":"OrderPickedUP_OutLineData[1.1:79]","start":658,"end":34298,"title":"OrderPickedUP_OutLineData[1.1:79] 658-34298"},{"id":5,"group":4,"content":"OrderPickedUP_OutLineData4cases[1.1:76]","start":658,"end":34342,"title":"OrderPickedUP_OutLineData4cases[1.1:76] 658-34342"},{"id":6,"group":5,"content":"OrderPickedUP_OutLineData4cases[1.2:77]","start":34359,"end":67491,"title":"OrderPickedUP_OutLineData4cases[1.2:77] 34359-67491"},{"id":7,"group":4,"content":"OrderPickedUP_OutLineData4cases[1.3:78]","start":34359,"end":67627,"title":"OrderPickedUP_OutLineData4cases[1.3:78] 34359-67627"},{"id":8,"group":2,"content":"OrderPickedUP_OutLineData4cases[1.4:79]","start":34374,"end":67490,"title":"OrderPickedUP_OutLineData4cases[1.4:79] 34374-67490"},{"id":9,"group":5,"content":"OrderPickedUP_YAMLData[1.1:94]","start":660,"end":34300,"title":"OrderPickedUP_YAMLData[1.1:94] 660-34300"}]);
+var container = document.getElementById('visualization');
+var timeline = new vis.Timeline(container);
+timeline.setOptions({ groupOrder: 'content' });
+timeline.setGroups(groups);
+timeline.setItems(items);
+</script>
+  </body>
+</html>

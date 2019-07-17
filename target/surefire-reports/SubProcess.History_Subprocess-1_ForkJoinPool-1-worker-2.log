@@ -1,0 +1,98 @@
+14:36:42.249 request:
+1 > GET http://historyprocessor-dlab03-nmd.dev.px-npe01.cf.t-mobile.com/dnd/v1/notification?keys=63decfea-1ac6-4c81-acc3-a88d7ea97ca4
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: historyprocessor-dlab03-nmd.dev.px-npe01.cf.t-mobile.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+14:36:42.884 response time in milliseconds: 520.60
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: HEAD,POST,GET,OPTIONS,DELETE,PUT,PATCH
+1 < Access-Control-Allow-Origin: *
+1 < Content-Length: 6122
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Tue, 16 Jul 2019 18:36:41 GMT
+1 < Server: Jetty(8.1.16.v20140903)
+1 < X-Vcap-Request-Id: 1c127894-71c7-488c-7932-e0dbb656ecb7
+{"notification":[{"id":"48fa1cc2-d7cd-428e-9e63-2618ddcf47d3","publisherEventName":"OrderPickedUp","type":"Email","status":"SENT","time":"2019-07-16T11:36:12.981-07:00","reportingId":"201907161136116121939f7a8-342c","publisherId":"63decfea-1ac6-4c81-acc3-a88d7ea97ca4","recepientInfo":[{"communicationAddress":"notifications.test.events+960844689@gmail.com","communicationLanguage":"en"}],"message":[{"text":"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<batch xmlns:pfx=\"http://services.tmobile.com/csi/email\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:tib=\"http://www.tibco.com/bw/xslt/custom-functions\" profile=\"HSOS\">\n    <template>\n        <content ref=\"ORDERSHIPPEDNOTRADEIN\" mfile=\"body.html\" type=\"text/html\" />\n        <header>\n            <from address=\"donotreply@t-mobile.com\" name=\"T-Mobile USA\" />\n            <reply address=\"donotreply@t-mobile.com\" name=\"T-Mobile USA\" />\n        </header>\n        <list>\n            <email id2=\"ORDERSHIPPEDNOTRADEIN\" id=\"20190716113612048ORDERSHIPPEDN\">\n                <rcpt address=\"notifications.test.events+960844689@gmail.com\" />\n                <pdata value=\"John Legere\" key=\"FullName\" />\n                <pdata value=\"69655\" key=\"OrderNumber\" />\n                <pdata value=\"7/16/2019\" key=\"OrderDate\" />\n                <pdata value=\"TestJ-BlackOnyx-32GB\" key=\"UpgradeDeviceDescription\" />\n                <pdata value=\"1ZW0Y5911361496530\" key=\"ShippingTrackingNumber\" />\n                <pdata value=\"http://wwwapps.ups.com/WebTracking/track?HTMLVersion=5.0&amp;loc=en_US&amp;Requester=UPSHome&amp;WBPM_lid=homepage%2Fct1.html_pnl_trk&amp;track.x=Track&amp;trackNums=1ZW0Y5911361496530\" key=\"CarrierUrl\" />\n                <pdata value=\"UPSExpeditedNextDayAir\" key=\"ShippingMethod\" />\n                <pdata value=\"One Ravinia Drive\" key=\"ShippingAddressLine1\" />\n                <pdata value=\"opp: perimeter mall\" key=\"ShippingAddressLine2\" />\n                <pdata value=\"BLOCK #3\" key=\"ShippingAddressLine3\" />\n                <pdata value=\"City1\" key=\"ShippingCityName\" />\n                <pdata value=\"GA\" key=\"ShippingStateCode\" />\n                <pdata value=\"30345\" key=\"ShippingZipCode\" />\n                <pdata value=\"US\" key=\"ShippingCountry\" />\n            </email>\n        </list>\n    </template>\n</batch>"}],"category":"Order & Shipping","statusInfo":{}},{"id":"8050bded-7dd3-4a79-8e0e-1fcdae62ec0b","publisherEventName":"OrderPickedUp","type":"Email","status":"SENT","time":"2019-07-16T11:36:13.865-07:00","reportingId":"201907161136116121939f7a8-342c","publisherId":"63decfea-1ac6-4c81-acc3-a88d7ea97ca4","recepientInfo":[{"communicationAddress":"order.fulfillment.tmo@gmail.com","communicationLanguage":"en"}],"message":[{"text":"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<batch xmlns:pfx=\"http://services.tmobile.com/csi/email\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:tib=\"http://www.tibco.com/bw/xslt/custom-functions\" profile=\"HSOS\">\n    <template>\n        <content ref=\"ORDERSHIPPEDNOTRADEIN\" mfile=\"body.html\" type=\"text/html\" />\n        <header>\n            <from address=\"donotreply@t-mobile.com\" name=\"T-Mobile USA\" />\n            <reply address=\"donotreply@t-mobile.com\" name=\"T-Mobile USA\" />\n        </header>\n        <list>\n            <email id2=\"ORDERSHIPPEDNOTRADEIN\" id=\"20190716113613222ORDERSHIPPEDN\">\n                <rcpt address=\"order.fulfillment.tmo@gmail.com\" />\n                <pdata value=\"John Legere\" key=\"FullName\" />\n                <pdata value=\"69655\" key=\"OrderNumber\" />\n                <pdata value=\"7/16/2019\" key=\"OrderDate\" />\n                <pdata value=\"TestJ-BlackOnyx-32GB\" key=\"UpgradeDeviceDescription\" />\n                <pdata value=\"1ZW0Y5911361496530\" key=\"ShippingTrackingNumber\" />\n                <pdata value=\"http://wwwapps.ups.com/WebTracking/track?HTMLVersion=5.0&amp;loc=en_US&amp;Requester=UPSHome&amp;WBPM_lid=homepage%2Fct1.html_pnl_trk&amp;track.x=Track&amp;trackNums=1ZW0Y5911361496530\" key=\"CarrierUrl\" />\n                <pdata value=\"UPSExpeditedNextDayAir\" key=\"ShippingMethod\" />\n                <pdata value=\"One Ravinia Drive\" key=\"ShippingAddressLine1\" />\n                <pdata value=\"opp: perimeter mall\" key=\"ShippingAddressLine2\" />\n                <pdata value=\"BLOCK #3\" key=\"ShippingAddressLine3\" />\n                <pdata value=\"City1\" key=\"ShippingCityName\" />\n                <pdata value=\"GA\" key=\"ShippingStateCode\" />\n                <pdata value=\"30345\" key=\"ShippingZipCode\" />\n                <pdata value=\"US\" key=\"ShippingCountry\" />\n            </email>\n        </list>\n    </template>\n</batch>"}],"category":"Order & Shipping","statusInfo":{}},{"id":"d444548e-7392-418e-9b35-2b91c9aced57","publisherEventName":"OrderPickedUp","type":"SMS","status":"SENT","time":"2019-07-16T11:36:12.393-07:00","reportingId":"2019071611361161288788543-bcb3","publisherId":"63decfea-1ac6-4c81-acc3-a88d7ea97ca4","recepientInfo":[{"communicationAddress":"9960844689","communicationLanguage":"en"}],"message":[{"language":"en","text":"9960844689,140,en,,,Your T-Mobile order# 69655 has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device.,,,,,,,,,,2019071611361161288788543-bcb3"}],"category":"Order & Shipping","statusInfo":{}},{"id":"f001eef4-9ce2-4797-a334-48f0eb56820f","publisherEventName":"OrderPickedUp","type":"SMS","status":"SENT","time":"2019-07-16T11:36:12.395-07:00","reportingId":"2019071611361161288788543-bcb3","publisherId":"63decfea-1ac6-4c81-acc3-a88d7ea97ca4","recepientInfo":[{"communicationAddress":"4046844689","communicationLanguage":"en"}],"message":[{"language":"en","text":"4046844689,140,en,,,Your T-Mobile order# 69655 has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device.,,,,,,,,,,2019071611361161288788543-bcb3"}],"category":"Order & Shipping","statusInfo":{}}]}
+
+14:36:42.886 [print] History_Urlhttp://historyprocessor-dlab03-nmd.dev.px-npe01.cf.t-mobile.com/dnd/v1/notification?keys=63decfea-1ac6-4c81-acc3-a88d7ea97ca4
+14:36:42.886 [print]
+14:36:42.890 [print] SMS_Data:9960844689,140,en,,,Your T-Mobile order# 69655 has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device.,,,,,,,,,,2019071611361161288788543-bcb3
+14:36:42.891 [print] SMS_Data1:4046844689,140,en,,,Your T-Mobile order# 69655 has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device.,,,,,,,,,,2019071611361161288788543-bcb3
+14:36:42.896 [print] <batch xmlns:pfx="http://services.tmobile.com/csi/email" xmlns:tib="http://www.tibco.com/bw/xslt/custom-functions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" profile="HSOS">
+  <template>
+    <content mfile="body.html" ref="ORDERSHIPPEDNOTRADEIN" type="text/html"/>
+    <header>
+      <from address="donotreply@t-mobile.com" name="T-Mobile USA"/>
+      <reply address="donotreply@t-mobile.com" name="T-Mobile USA"/>
+    </header>
+    <list>
+      <email id="20190716113612048ORDERSHIPPEDN" id2="ORDERSHIPPEDNOTRADEIN">
+        <rcpt address="notifications.test.events+960844689@gmail.com"/>
+        <pdata key="FullName" value="John Legere"/>
+        <pdata key="OrderNumber" value="69655"/>
+        <pdata key="OrderDate" value="7/16/2019"/>
+        <pdata key="UpgradeDeviceDescription" value="TestJ-BlackOnyx-32GB"/>
+        <pdata key="ShippingTrackingNumber" value="1ZW0Y5911361496530"/>
+        <pdata key="CarrierUrl" value="http://wwwapps.ups.com/WebTracking/track?HTMLVersion=5.0&amp;loc=en_US&amp;Requester=UPSHome&amp;WBPM_lid=homepage%2Fct1.html_pnl_trk&amp;track.x=Track&amp;trackNums=1ZW0Y5911361496530"/>
+        <pdata key="ShippingMethod" value="UPSExpeditedNextDayAir"/>
+        <pdata key="ShippingAddressLine1" value="One Ravinia Drive"/>
+        <pdata key="ShippingAddressLine2" value="opp: perimeter mall"/>
+        <pdata key="ShippingAddressLine3" value="BLOCK #3"/>
+        <pdata key="ShippingCityName" value="City1"/>
+        <pdata key="ShippingStateCode" value="GA"/>
+        <pdata key="ShippingZipCode" value="30345"/>
+        <pdata key="ShippingCountry" value="US"/>
+      </email>
+    </list>
+  </template>
+</batch>
+
+14:36:42.902 [print] <batch xmlns:pfx="http://services.tmobile.com/csi/email" xmlns:tib="http://www.tibco.com/bw/xslt/custom-functions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" profile="HSOS">
+  <template>
+    <content mfile="body.html" ref="ORDERSHIPPEDNOTRADEIN" type="text/html"/>
+    <header>
+      <from address="donotreply@t-mobile.com" name="T-Mobile USA"/>
+      <reply address="donotreply@t-mobile.com" name="T-Mobile USA"/>
+    </header>
+    <list>
+      <email id="20190716113612048ORDERSHIPPEDN" id2="ORDERSHIPPEDNOTRADEIN">
+        <rcpt address="notifications.test.events+960844689@gmail.com"/>
+        <pdata key="FullName" value="John Legere"/>
+        <pdata key="OrderNumber" value="69655"/>
+        <pdata key="OrderDate" value="7/16/2019"/>
+        <pdata key="UpgradeDeviceDescription" value="TestJ-BlackOnyx-32GB"/>
+        <pdata key="ShippingTrackingNumber" value="1ZW0Y5911361496530"/>
+        <pdata key="CarrierUrl" value="http://wwwapps.ups.com/WebTracking/track?HTMLVersion=5.0&amp;loc=en_US&amp;Requester=UPSHome&amp;WBPM_lid=homepage%2Fct1.html_pnl_trk&amp;track.x=Track&amp;trackNums=1ZW0Y5911361496530"/>
+        <pdata key="ShippingMethod" value="UPSExpeditedNextDayAir"/>
+        <pdata key="ShippingAddressLine1" value="One Ravinia Drive"/>
+        <pdata key="ShippingAddressLine2" value="opp: perimeter mall"/>
+        <pdata key="ShippingAddressLine3" value="BLOCK #3"/>
+        <pdata key="ShippingCityName" value="City1"/>
+        <pdata key="ShippingStateCode" value="GA"/>
+        <pdata key="ShippingZipCode" value="30345"/>
+        <pdata key="ShippingCountry" value="US"/>
+      </email>
+    </list>
+  </template>
+</batch>
+
+p://wwwapps.ups.com/WebTracking/track?HTMLVersion=5.0&amp;loc=en_US&amp;Requester=UPSHome&amp;WBPM_lid=homepage%2Fct1.html_pnl_trk&amp;track.x=Track&amp;trackNums=1ZW0Y5911361496530"/>
+        <pdata key="ShippingMethod" value="UPS Ground (5-7 business days)"/>
+        <pdata key="ShippingAddressLine1" value="One Ravinia Drive"/>
+        <pdata key="ShippingAddressLine2" value="opp: perimeter mall"/>
+        <pdata key="ShippingAddressLine3" value="BLOCK #3"/>
+        <pdata key="ShippingCityName" value="Atlanta"/>
+        <pdata key="ShippingStateCode" value="CA"/>
+        <pdata key="ShippingZipCode" value="City2"/>
+        <pdata key="ShippingCountry" value="US"/>
+        <pdata key="TradeInOldDeviceDesc" value="Apple  iPhone 6s - Gold - 32GB"/>
+        <pdata key="TradeInDeviceReturndate" value="8/15/2019"/>
+        <pdata key="TradeInPromoOneTimeCredit" value="0.00"/>
+      </email>
+    </list>
+  </template>
+</batch>
+

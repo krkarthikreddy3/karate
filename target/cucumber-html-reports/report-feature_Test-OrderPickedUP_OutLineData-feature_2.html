@@ -1,0 +1,4042 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Feature: Test/OrderPickedUP_OutLineData.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Jilani_maven_demo</td>
+              <td>1</td>
+            <td>16 Jul 2019, 14:37</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">Test/OrderPickedUP_OutLineData.feature</td>
+                    <td      class="passed"    >143</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">143</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="67060201800">1m 7s 060ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Test/OrderPickedUP_OutLineData.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">OrderPickedUp_OutLineData</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">069ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def request_uuid = eventID1</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>14:36:09.289 karate.env system property was: dlab03 
+14:36:09.470 config.eventID1 Name: d6f682bc-0430-457c-b4b9-a71f13195da6 
+14:36:09.483 config.rd1: 61056 
+14:36:09.508 config.date: 2019-07-16T14:36:09Z 
+14:36:09.529 config.date1: 2019-07-18 
+14:36:09.531 config.date1: 2019-07-16</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def request_Date = date</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print request_Date</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>14:36:09.643 [print] 2019-07-16T14:36:09Z</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print rd1 = rd1</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>14:36:09.647 [print] 61056</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print rd1</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>14:36:09.647 [print] 61056</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def startDate = startDate</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;StartDate:&quot;+ startDate</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>14:36:09.651 [print] StartDate:2019-07-16</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def endDate = endDate</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;EndDate:&quot;+ endDate</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>14:36:09.654 [print] EndDate:2019-07-18</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def Event_Type = &quot;OrderPickedUp&quot;</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def Datalist = '5'</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def data = read('classpath:OrderPickedUP.json')</span>
+  
+  <span class="lead-duration duration">053ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def Expected_sms = &quot;Your T-Mobile order# &quot; + rd1 + &quot; has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device.&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def history_url = history</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;history_url:&quot;+ history_url</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>14:36:09.715 [print] history_url:http://historyprocessor-dlab03-nmd.dev.px-npe01.cf.t-mobile.com/dnd/v1/notification?keys=d6f682bc-0430-457c-b4b9-a71f13195da6</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1m 6s 990ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">'OutLine_Testcase_1'</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def ExpShipping_StateCode = 'GA'</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def ExpShipping_Country = 'US'</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def ExpTemplateID = 'ORDERSHIPPEDNOTRADEIN'</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def EventType = 'OrderPickedUp'</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def Deepresponse = call read('../SubProcess/Deep_SubProcess.feature')</span>
+  
+  <span class="lead-duration duration">32s 531ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention"></span>
+  <span class="name">../SubProcess/Deep_SubProcess.feature</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url deep</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def sleep =</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>function(seconds){
+  for(i = 0; i &lt;= seconds; i++)
+  {
+    java.lang.Thread.sleep(1*1000);
+    karate.log(i);
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path Event_Type</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">configure ssl = true</span>
+  
+  <span class="lead-duration duration">318ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request data</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">1s 175ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>14:36:10.157 request:
+1 &gt; POST https://deep-gateway-development.dev.px-npe01.cf.t-mobile.com/dlab03/deep/v1/events/OrderPickedUp
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 1951
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: deep-gateway-development.dev.px-npe01.cf.t-mobile.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{&quot;auditInfo&quot;:{&quot;orderId&quot;:&quot;6109698182_Test&quot;},&quot;eventId&quot;:&quot;d6f682bc-0430-457c-b4b9-a71f13195da6&quot;,&quot;eventProducerId&quot;:&quot;OrderFulfillmentDTD&quot;,&quot;eventTime&quot;:&quot;2019-07-16T14:36:09Z&quot;,&quot;eventType&quot;:&quot;OrderPickedUp&quot;,&quot;payload&quot;:{&quot;orderId&quot;:&quot;61056&quot;,&quot;metadata&quot;:{&quot;lastModified&quot;:&quot;2019-07-03T04:47:34.505-07:00&quot;},&quot;keys&quot;:[{}],&quot;salesInfo&quot;:{&quot;senderSystemId&quot;:&quot;MYTMO&quot;,&quot;salesChannel&quot;:&quot;WEB&quot;,&quot;applicationId&quot;:&quot;ESERVICE&quot;},&quot;creationTime&quot;:&quot;2019-07-16T14:36:09Z&quot;,&quot;shippingDetails&quot;:[{&quot;trackingNumber&quot;:&quot;1ZW0Y5911361496530&quot;,&quot;freightCarrier&quot;:&quot;UPS&quot;,&quot;description&quot;:&quot;UPSExpeditedNextDayAir&quot;,&quot;shipTo&quot;:{&quot;firstName&quot;:&quot;ALLASANI&quot;},&quot;estimatedDelivery&quot;:{&quot;startDate&quot;:&quot;2019-07-16&quot;,&quot;endDate&quot;:&quot;2019-07-18&quot;}}],&quot;status&quot;:&quot;Running&quot;,&quot;orderLineCollection&quot;:{&quot;orderLines&quot;:[{&quot;orderLineId&quot;:&quot;1&quot;,&quot;offer&quot;:{&quot;productType&quot;:&quot;Device&quot;,&quot;productSubTypes&quot;:[&quot;Handset&quot;],&quot;unitPrice&quot;:649.99,&quot;offerDescription&quot;:&quot;TestJ-BlackOnyx-32GB&quot;,&quot;products&quot;:[{&quot;variants&quot;:[{&quot;sku&quot;:&quot;888462500470&quot;}]}]},&quot;lineId&quot;:&quot;1&quot;,&quot;quantity&quot;:1,&quot;transactionType&quot;:&quot;CHANGEDEVICE&quot;,&quot;fulfillmentType&quot;:&quot;SHP&quot;},{&quot;orderLineId&quot;:&quot;2&quot;,&quot;offer&quot;:{},&quot;lineId&quot;:&quot;1&quot;,&quot;quantity&quot;:1,&quot;transactionType&quot;:&quot;CHANGEDEVICE&quot;}]},&quot;accounts&quot;:[{&quot;accountNumber&quot;:&quot;960698182&quot;,&quot;accountType&quot;:&quot;INDIVIDUAL&quot;,&quot;accountSubType&quot;:&quot;INDIVIDUAL_REGULAR&quot;,&quot;contactFirstName&quot;:&quot;John&quot;,&quot;contactFamilyName&quot;:&quot;Legere&quot;}],&quot;lines&quot;:[{&quot;lineId&quot;:&quot;1&quot;,&quot;phoneNumber&quot;:&quot;4046698182&quot;,&quot;promotions&quot;:[{}],&quot;eipIndicator&quot;:false}],&quot;customerProfile&quot;:{&quot;preferredLanguage&quot;:&quot;en&quot;,&quot;phoneNumbers&quot;:[{&quot;phoneNumber&quot;:&quot;4046698182&quot;,&quot;purposes&quot;:[&quot;Receipt&quot;]}],&quot;emailCommunications&quot;:[{&quot;emailAddress&quot;:&quot;order.fulfillment.tmo@gmail.com&quot;,&quot;purposes&quot;:[&quot;Receipt&quot;]}]},&quot;addresses&quot;:[{&quot;addressLine1&quot;:&quot;One Ravinia Drive&quot;,&quot;addressLine2&quot;:&quot;opp: perimeter mall&quot;,&quot;addressLine3&quot;:&quot;BLOCK #3&quot;,&quot;cityName&quot;:&quot;Atlanta&quot;,&quot;stateCode&quot;:&quot;GA&quot;,&quot;zip&quot;:&quot;30346&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;purposes&quot;:[&quot;Shipping&quot;]},{&quot;addressLine1&quot;:&quot;1 RAVINIA DR&quot;,&quot;addressLine2&quot;:&quot;Building #2&quot;,&quot;addressLine3&quot;:&quot;7th Floor&quot;,&quot;cityName&quot;:&quot;Atlanta&quot;,&quot;stateCode&quot;:&quot;GA&quot;,&quot;zip&quot;:&quot;30346&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;purposes&quot;:[&quot;Billing&quot;]}]},&quot;specifications&quot;:[]}
+
+14:36:11.229 response time in milliseconds: 1072.26
+1 &lt; 200
+1 &lt; Content-Length: 102
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Tue, 16 Jul 2019 18:36:10 GMT
+1 &lt; X-Application-Context: deep-gateway:development,cloud:2
+1 &lt; X-Vcap-Request-Id: 56906254-85f0-4fa0-77ca-ba592d2199f9
+{&quot;message&quot;:&quot;Message Published Successfully&quot;,&quot;status&quot;:&quot;200&quot;,&quot;timestamp&quot;:&quot;Tue Jul 16 18:36:10 UTC 2019&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response contains {&quot;message&quot;:&quot;Message Published Successfully&quot;}</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def DeepStatus = &quot;Passed&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;DeepStatus: &quot; + DeepStatus</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>14:36:11.231 [print] DeepStatus: Passed</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">call sleep DeepPublishWaiteTime</span>
+  
+  <span class="lead-duration duration">31s 026ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>14:36:12.233 0 
+14:36:13.233 1.0 
+14:36:14.235 2.0 
+14:36:15.236 3.0 
+14:36:16.238 4.0 
+14:36:17.238 5.0 
+14:36:18.239 6.0 
+14:36:19.241 7.0 
+14:36:20.242 8.0 
+14:36:21.243 9.0 
+14:36:22.244 10.0 
+14:36:23.244 11.0 
+14:36:24.246 12.0 
+14:36:25.247 13.0 
+14:36:26.248 14.0 
+14:36:27.248 15.0 
+14:36:28.249 16.0 
+14:36:29.250 17.0 
+14:36:30.251 18.0 
+14:36:31.251 19.0 
+14:36:32.251 20.0 
+14:36:33.252 21.0 
+14:36:34.252 22.0 
+14:36:35.254 23.0 
+14:36:36.255 24.0 
+14:36:37.255 25.0 
+14:36:38.256 26.0 
+14:36:39.256 27.0 
+14:36:40.257 28.0 
+14:36:41.258 29.0 
+14:36:42.258 30.0</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match  Deepresponse.DeepStatus == &quot;Passed&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def HistoryData = call read('../SubProcess/History_Subprocess.feature')</span>
+  
+  <span class="lead-duration duration">575ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention"></span>
+  <span class="name">../SubProcess/History_Subprocess.feature</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url history_url</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">configure ssl = true</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">546ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>14:36:42.266 request:
+1 &gt; GET http://historyprocessor-dlab03-nmd.dev.px-npe01.cf.t-mobile.com/dnd/v1/notification?keys=d6f682bc-0430-457c-b4b9-a71f13195da6
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: historyprocessor-dlab03-nmd.dev.px-npe01.cf.t-mobile.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+14:36:42.809 response time in milliseconds: 426.33
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: HEAD,POST,GET,OPTIONS,DELETE,PUT,PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Length: 6125
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Tue, 16 Jul 2019 18:36:41 GMT
+1 &lt; Server: Jetty(8.1.16.v20140903)
+1 &lt; X-Vcap-Request-Id: f5a08701-a851-4967-61c3-f0c7e366d1df
+{&quot;notification&quot;:[{&quot;id&quot;:&quot;a9125758-c0d2-480b-9276-809c2900bcd7&quot;,&quot;publisherEventName&quot;:&quot;OrderPickedUp&quot;,&quot;type&quot;:&quot;SMS&quot;,&quot;status&quot;:&quot;SENT&quot;,&quot;time&quot;:&quot;2019-07-16T11:36:12.593-07:00&quot;,&quot;reportingId&quot;:&quot;2019071611361171688788543-bcb3&quot;,&quot;publisherId&quot;:&quot;d6f682bc-0430-457c-b4b9-a71f13195da6&quot;,&quot;recepientInfo&quot;:[{&quot;communicationAddress&quot;:&quot;9960698182&quot;,&quot;communicationLanguage&quot;:&quot;en&quot;}],&quot;message&quot;:[{&quot;language&quot;:&quot;en&quot;,&quot;text&quot;:&quot;9960698182,140,en,,,Your T-Mobile order# 61056 has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device.,,,,,,,,,,2019071611361171688788543-bcb3&quot;}],&quot;category&quot;:&quot;Order &amp; Shipping&quot;,&quot;statusInfo&quot;:{}},{&quot;id&quot;:&quot;cbbcb842-fae4-458d-b761-373128bf41f8&quot;,&quot;publisherEventName&quot;:&quot;OrderPickedUp&quot;,&quot;type&quot;:&quot;Email&quot;,&quot;status&quot;:&quot;SENT&quot;,&quot;time&quot;:&quot;2019-07-16T11:36:13.952-07:00&quot;,&quot;reportingId&quot;:&quot;201907161136117161939f7a8-342c&quot;,&quot;publisherId&quot;:&quot;d6f682bc-0430-457c-b4b9-a71f13195da6&quot;,&quot;recepientInfo&quot;:[{&quot;communicationAddress&quot;:&quot;notifications.test.events+960698182@gmail.com&quot;,&quot;communicationLanguage&quot;:&quot;en&quot;}],&quot;message&quot;:[{&quot;text&quot;:&quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;\n&lt;batch xmlns:pfx=\&quot;http://services.tmobile.com/csi/email\&quot; xmlns:xsd=\&quot;http://www.w3.org/2001/XMLSchema\&quot; xmlns:tib=\&quot;http://www.tibco.com/bw/xslt/custom-functions\&quot; profile=\&quot;HSOS\&quot;&gt;\n    &lt;template&gt;\n        &lt;content ref=\&quot;ORDERSHIPPEDNOTRADEIN\&quot; mfile=\&quot;body.html\&quot; type=\&quot;text/html\&quot; /&gt;\n        &lt;header&gt;\n            &lt;from address=\&quot;donotreply@t-mobile.com\&quot; name=\&quot;T-Mobile USA\&quot; /&gt;\n            &lt;reply address=\&quot;donotreply@t-mobile.com\&quot; name=\&quot;T-Mobile USA\&quot; /&gt;\n        &lt;/header&gt;\n        &lt;list&gt;\n            &lt;email id2=\&quot;ORDERSHIPPEDNOTRADEIN\&quot; id=\&quot;20190716113613299ORDERSHIPPEDN\&quot;&gt;\n                &lt;rcpt address=\&quot;notifications.test.events+960698182@gmail.com\&quot; /&gt;\n                &lt;pdata value=\&quot;John Legere\&quot; key=\&quot;FullName\&quot; /&gt;\n                &lt;pdata value=\&quot;61056\&quot; key=\&quot;OrderNumber\&quot; /&gt;\n                &lt;pdata value=\&quot;7/16/2019\&quot; key=\&quot;OrderDate\&quot; /&gt;\n                &lt;pdata value=\&quot;TestJ-BlackOnyx-32GB\&quot; key=\&quot;UpgradeDeviceDescription\&quot; /&gt;\n                &lt;pdata value=\&quot;1ZW0Y5911361496530\&quot; key=\&quot;ShippingTrackingNumber\&quot; /&gt;\n                &lt;pdata value=\&quot;http://wwwapps.ups.com/WebTracking/track?HTMLVersion=5.0&amp;amp;loc=en_US&amp;amp;Requester=UPSHome&amp;amp;WBPM_lid=homepage%2Fct1.html_pnl_trk&amp;amp;track.x=Track&amp;amp;trackNums=1ZW0Y5911361496530\&quot; key=\&quot;CarrierUrl\&quot; /&gt;\n                &lt;pdata value=\&quot;UPSExpeditedNextDayAir\&quot; key=\&quot;ShippingMethod\&quot; /&gt;\n                &lt;pdata value=\&quot;One Ravinia Drive\&quot; key=\&quot;ShippingAddressLine1\&quot; /&gt;\n                &lt;pdata value=\&quot;opp: perimeter mall\&quot; key=\&quot;ShippingAddressLine2\&quot; /&gt;\n                &lt;pdata value=\&quot;BLOCK #3\&quot; key=\&quot;ShippingAddressLine3\&quot; /&gt;\n                &lt;pdata value=\&quot;Atlanta\&quot; key=\&quot;ShippingCityName\&quot; /&gt;\n                &lt;pdata value=\&quot;GA\&quot; key=\&quot;ShippingStateCode\&quot; /&gt;\n                &lt;pdata value=\&quot;30346\&quot; key=\&quot;ShippingZipCode\&quot; /&gt;\n                &lt;pdata value=\&quot;US\&quot; key=\&quot;ShippingCountry\&quot; /&gt;\n            &lt;/email&gt;\n        &lt;/list&gt;\n    &lt;/template&gt;\n&lt;/batch&gt;&quot;}],&quot;category&quot;:&quot;Order &amp; Shipping&quot;,&quot;statusInfo&quot;:{}},{&quot;id&quot;:&quot;e9b21122-cded-47d3-b4f9-d75535a8a8b3&quot;,&quot;publisherEventName&quot;:&quot;OrderPickedUp&quot;,&quot;type&quot;:&quot;Email&quot;,&quot;status&quot;:&quot;SENT&quot;,&quot;time&quot;:&quot;2019-07-16T11:36:14.174-07:00&quot;,&quot;reportingId&quot;:&quot;201907161136117161939f7a8-342c&quot;,&quot;publisherId&quot;:&quot;d6f682bc-0430-457c-b4b9-a71f13195da6&quot;,&quot;recepientInfo&quot;:[{&quot;communicationAddress&quot;:&quot;order.fulfillment.tmo@gmail.com&quot;,&quot;communicationLanguage&quot;:&quot;en&quot;}],&quot;message&quot;:[{&quot;text&quot;:&quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;\n&lt;batch xmlns:pfx=\&quot;http://services.tmobile.com/csi/email\&quot; xmlns:xsd=\&quot;http://www.w3.org/2001/XMLSchema\&quot; xmlns:tib=\&quot;http://www.tibco.com/bw/xslt/custom-functions\&quot; profile=\&quot;HSOS\&quot;&gt;\n    &lt;template&gt;\n        &lt;content ref=\&quot;ORDERSHIPPEDNOTRADEIN\&quot; mfile=\&quot;body.html\&quot; type=\&quot;text/html\&quot; /&gt;\n        &lt;header&gt;\n            &lt;from address=\&quot;donotreply@t-mobile.com\&quot; name=\&quot;T-Mobile USA\&quot; /&gt;\n            &lt;reply address=\&quot;donotreply@t-mobile.com\&quot; name=\&quot;T-Mobile USA\&quot; /&gt;\n        &lt;/header&gt;\n        &lt;list&gt;\n            &lt;email id2=\&quot;ORDERSHIPPEDNOTRADEIN\&quot; id=\&quot;20190716113613450ORDERSHIPPEDN\&quot;&gt;\n                &lt;rcpt address=\&quot;order.fulfillment.tmo@gmail.com\&quot; /&gt;\n                &lt;pdata value=\&quot;John Legere\&quot; key=\&quot;FullName\&quot; /&gt;\n                &lt;pdata value=\&quot;61056\&quot; key=\&quot;OrderNumber\&quot; /&gt;\n                &lt;pdata value=\&quot;7/16/2019\&quot; key=\&quot;OrderDate\&quot; /&gt;\n                &lt;pdata value=\&quot;TestJ-BlackOnyx-32GB\&quot; key=\&quot;UpgradeDeviceDescription\&quot; /&gt;\n                &lt;pdata value=\&quot;1ZW0Y5911361496530\&quot; key=\&quot;ShippingTrackingNumber\&quot; /&gt;\n                &lt;pdata value=\&quot;http://wwwapps.ups.com/WebTracking/track?HTMLVersion=5.0&amp;amp;loc=en_US&amp;amp;Requester=UPSHome&amp;amp;WBPM_lid=homepage%2Fct1.html_pnl_trk&amp;amp;track.x=Track&amp;amp;trackNums=1ZW0Y5911361496530\&quot; key=\&quot;CarrierUrl\&quot; /&gt;\n                &lt;pdata value=\&quot;UPSExpeditedNextDayAir\&quot; key=\&quot;ShippingMethod\&quot; /&gt;\n                &lt;pdata value=\&quot;One Ravinia Drive\&quot; key=\&quot;ShippingAddressLine1\&quot; /&gt;\n                &lt;pdata value=\&quot;opp: perimeter mall\&quot; key=\&quot;ShippingAddressLine2\&quot; /&gt;\n                &lt;pdata value=\&quot;BLOCK #3\&quot; key=\&quot;ShippingAddressLine3\&quot; /&gt;\n                &lt;pdata value=\&quot;Atlanta\&quot; key=\&quot;ShippingCityName\&quot; /&gt;\n                &lt;pdata value=\&quot;GA\&quot; key=\&quot;ShippingStateCode\&quot; /&gt;\n                &lt;pdata value=\&quot;30346\&quot; key=\&quot;ShippingZipCode\&quot; /&gt;\n                &lt;pdata value=\&quot;US\&quot; key=\&quot;ShippingCountry\&quot; /&gt;\n            &lt;/email&gt;\n        &lt;/list&gt;\n    &lt;/template&gt;\n&lt;/batch&gt;&quot;}],&quot;category&quot;:&quot;Order &amp; Shipping&quot;,&quot;statusInfo&quot;:{}},{&quot;id&quot;:&quot;ff34ee93-d19c-4bac-9db8-67e95fc0dfe9&quot;,&quot;publisherEventName&quot;:&quot;OrderPickedUp&quot;,&quot;type&quot;:&quot;SMS&quot;,&quot;status&quot;:&quot;SENT&quot;,&quot;time&quot;:&quot;2019-07-16T11:36:13.12-07:00&quot;,&quot;reportingId&quot;:&quot;2019071611361171688788543-bcb3&quot;,&quot;publisherId&quot;:&quot;d6f682bc-0430-457c-b4b9-a71f13195da6&quot;,&quot;recepientInfo&quot;:[{&quot;communicationAddress&quot;:&quot;4046698182&quot;,&quot;communicationLanguage&quot;:&quot;en&quot;}],&quot;message&quot;:[{&quot;language&quot;:&quot;en&quot;,&quot;text&quot;:&quot;4046698182,140,en,,,Your T-Mobile order# 61056 has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device.,,,,,,,,,,2019071611361171688788543-bcb3&quot;}],&quot;category&quot;:&quot;Order &amp; Shipping&quot;,&quot;statusInfo&quot;:{}}]}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;History_Url&quot;+history_url</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>14:36:42.812 [print] History_Urlhttp://historyprocessor-dlab03-nmd.dev.px-npe01.cf.t-mobile.com/dnd/v1/notification?keys=d6f682bc-0430-457c-b4b9-a71f13195da6</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def HistoryResponse = response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print Response</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>14:36:42.814 [print]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def smsdatas = karate.jsonPath(HistoryResponse, &quot;$.notification[?(@.type =='SMS')][?(@.status =='SENT')].message[*].text&quot;)</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def smsdata = smsdatas.get(0)</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;SMS_Data:&quot; +smsdata</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>14:36:42.821 [print] SMS_Data:9960698182,140,en,,,Your T-Mobile order# 61056 has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device.,,,,,,,,,,2019071611361171688788543-bcb3</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def smsdata1 = smsdatas.get(1)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;SMS_Data1:&quot; +smsdata1</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>14:36:42.822 [print] SMS_Data1:4046698182,140,en,,,Your T-Mobile order# 61056 has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device.,,,,,,,,,,2019071611361171688788543-bcb3</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def EmailData = karate.jsonPath(HistoryResponse, &quot;$.notification[?(@.type =='Email')][?(@.status =='SENT')].message[*].text&quot;)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Email_Data1 = EmailData.get(0)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">xml xmldata = Email_Data1</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print xmldata</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>14:36:42.829 [print] &lt;batch xmlns:pfx=&quot;http://services.tmobile.com/csi/email&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; profile=&quot;HSOS&quot;&gt;
+  &lt;template&gt;
+    &lt;content mfile=&quot;body.html&quot; ref=&quot;ORDERSHIPPEDNOTRADEIN&quot; type=&quot;text/html&quot;/&gt;
+    &lt;header&gt;
+      &lt;from address=&quot;donotreply@t-mobile.com&quot; name=&quot;T-Mobile USA&quot;/&gt;
+      &lt;reply address=&quot;donotreply@t-mobile.com&quot; name=&quot;T-Mobile USA&quot;/&gt;
+    &lt;/header&gt;
+    &lt;list&gt;
+      &lt;email id=&quot;20190716113613299ORDERSHIPPEDN&quot; id2=&quot;ORDERSHIPPEDNOTRADEIN&quot;&gt;
+        &lt;rcpt address=&quot;notifications.test.events+960698182@gmail.com&quot;/&gt;
+        &lt;pdata key=&quot;FullName&quot; value=&quot;John Legere&quot;/&gt;
+        &lt;pdata key=&quot;OrderNumber&quot; value=&quot;61056&quot;/&gt;
+        &lt;pdata key=&quot;OrderDate&quot; value=&quot;7/16/2019&quot;/&gt;
+        &lt;pdata key=&quot;UpgradeDeviceDescription&quot; value=&quot;TestJ-BlackOnyx-32GB&quot;/&gt;
+        &lt;pdata key=&quot;ShippingTrackingNumber&quot; value=&quot;1ZW0Y5911361496530&quot;/&gt;
+        &lt;pdata key=&quot;CarrierUrl&quot; value=&quot;http://wwwapps.ups.com/WebTracking/track?HTMLVersion=5.0&amp;amp;loc=en_US&amp;amp;Requester=UPSHome&amp;amp;WBPM_lid=homepage%2Fct1.html_pnl_trk&amp;amp;track.x=Track&amp;amp;trackNums=1ZW0Y5911361496530&quot;/&gt;
+        &lt;pdata key=&quot;ShippingMethod&quot; value=&quot;UPSExpeditedNextDayAir&quot;/&gt;
+        &lt;pdata key=&quot;ShippingAddressLine1&quot; value=&quot;One Ravinia Drive&quot;/&gt;
+        &lt;pdata key=&quot;ShippingAddressLine2&quot; value=&quot;opp: perimeter mall&quot;/&gt;
+        &lt;pdata key=&quot;ShippingAddressLine3&quot; value=&quot;BLOCK #3&quot;/&gt;
+        &lt;pdata key=&quot;ShippingCityName&quot; value=&quot;Atlanta&quot;/&gt;
+        &lt;pdata key=&quot;ShippingStateCode&quot; value=&quot;GA&quot;/&gt;
+        &lt;pdata key=&quot;ShippingZipCode&quot; value=&quot;30346&quot;/&gt;
+        &lt;pdata key=&quot;ShippingCountry&quot; value=&quot;US&quot;/&gt;
+      &lt;/email&gt;
+    &lt;/list&gt;
+  &lt;/template&gt;
+&lt;/batch&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Email_Data2 = EmailData.get(0)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">xml xmldata1 = Email_Data2</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print xmldata1</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>14:36:42.834 [print] &lt;batch xmlns:pfx=&quot;http://services.tmobile.com/csi/email&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; profile=&quot;HSOS&quot;&gt;
+  &lt;template&gt;
+    &lt;content mfile=&quot;body.html&quot; ref=&quot;ORDERSHIPPEDNOTRADEIN&quot; type=&quot;text/html&quot;/&gt;
+    &lt;header&gt;
+      &lt;from address=&quot;donotreply@t-mobile.com&quot; name=&quot;T-Mobile USA&quot;/&gt;
+      &lt;reply address=&quot;donotreply@t-mobile.com&quot; name=&quot;T-Mobile USA&quot;/&gt;
+    &lt;/header&gt;
+    &lt;list&gt;
+      &lt;email id=&quot;20190716113613299ORDERSHIPPEDN&quot; id2=&quot;ORDERSHIPPEDNOTRADEIN&quot;&gt;
+        &lt;rcpt address=&quot;notifications.test.events+960698182@gmail.com&quot;/&gt;
+        &lt;pdata key=&quot;FullName&quot; value=&quot;John Legere&quot;/&gt;
+        &lt;pdata key=&quot;OrderNumber&quot; value=&quot;61056&quot;/&gt;
+        &lt;pdata key=&quot;OrderDate&quot; value=&quot;7/16/2019&quot;/&gt;
+        &lt;pdata key=&quot;UpgradeDeviceDescription&quot; value=&quot;TestJ-BlackOnyx-32GB&quot;/&gt;
+        &lt;pdata key=&quot;ShippingTrackingNumber&quot; value=&quot;1ZW0Y5911361496530&quot;/&gt;
+        &lt;pdata key=&quot;CarrierUrl&quot; value=&quot;http://wwwapps.ups.com/WebTracking/track?HTMLVersion=5.0&amp;amp;loc=en_US&amp;amp;Requester=UPSHome&amp;amp;WBPM_lid=homepage%2Fct1.html_pnl_trk&amp;amp;track.x=Track&amp;amp;trackNums=1ZW0Y5911361496530&quot;/&gt;
+        &lt;pdata key=&quot;ShippingMethod&quot; value=&quot;UPSExpeditedNextDayAir&quot;/&gt;
+        &lt;pdata key=&quot;ShippingAddressLine1&quot; value=&quot;One Ravinia Drive&quot;/&gt;
+        &lt;pdata key=&quot;ShippingAddressLine2&quot; value=&quot;opp: perimeter mall&quot;/&gt;
+        &lt;pdata key=&quot;ShippingAddressLine3&quot; value=&quot;BLOCK #3&quot;/&gt;
+        &lt;pdata key=&quot;ShippingCityName&quot; value=&quot;Atlanta&quot;/&gt;
+        &lt;pdata key=&quot;ShippingStateCode&quot; value=&quot;GA&quot;/&gt;
+        &lt;pdata key=&quot;ShippingZipCode&quot; value=&quot;30346&quot;/&gt;
+        &lt;pdata key=&quot;ShippingCountry&quot; value=&quot;US&quot;/&gt;
+      &lt;/email&gt;
+    &lt;/list&gt;
+  &lt;/template&gt;
+&lt;/batch&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def HistoryResponse = HistoryData.req</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def SMS_Data = call read('../SubProcess/SMS_Subprocess.feature')</span>
+  
+  <span class="lead-duration duration">018ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention"></span>
+  <span class="name">../SubProcess/SMS_Subprocess.feature</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def extracted_sms = HistoryData.smsdata.trim().split(',')</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def extracted_sms = extracted_sms.get(Datalist)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;SMS:&quot; +extracted_sms</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>14:36:42.845 [print] SMS:Your T-Mobile order# 61056 has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device.</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def extracted_sms1 = HistoryData.smsdata1.trim().split(',')</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def extracted_sms1 = extracted_sms1.get(Datalist)</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;SMS1:&quot; +extracted_sms1</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>14:36:42.852 [print] SMS1:Your T-Mobile order# 61056 has shipped! Visit t-mo.co/shipment to check status of your order. Visit t-mo.co/guide for tips to set-up your new device.</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def extracted_sms = SMS_Data.extracted_sms</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def extracted_sms1 = SMS_Data.extracted_sms1</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match extracted_sms == Expected_sms</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match extracted_sms1 == Expected_sms</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def Email_Data = call read('../SubProcess/Email_Subprocess.feature')</span>
+  
+  <span class="lead-duration duration">383ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention"></span>
+  <span class="name">../SubProcess/Email_Subprocess.feature</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">xml xmldata1 = HistoryData.xmldata</span>
+  
+  <span class="lead-duration duration">033ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print xmldata1</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>14:36:42.909 [print] &lt;batch xmlns:pfx=&quot;http://services.tmobile.com/csi/email&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; profile=&quot;HSOS&quot;&gt;
+  &lt;template&gt;
+    &lt;content mfile=&quot;body.html&quot; ref=&quot;ORDERSHIPPEDNOTRADEIN&quot; type=&quot;text/html&quot;/&gt;
+    &lt;header&gt;
+      &lt;from address=&quot;donotreply@t-mobile.com&quot; name=&quot;T-Mobile USA&quot;/&gt;
+      &lt;reply address=&quot;donotreply@t-mobile.com&quot; name=&quot;T-Mobile USA&quot;/&gt;
+    &lt;/header&gt;
+    &lt;list&gt;
+      &lt;email id=&quot;20190716113613299ORDERSHIPPEDN&quot; id2=&quot;ORDERSHIPPEDNOTRADEIN&quot;&gt;
+        &lt;rcpt address=&quot;notifications.test.events+960698182@gmail.com&quot;/&gt;
+        &lt;pdata key=&quot;FullName&quot; value=&quot;John Legere&quot;/&gt;
+        &lt;pdata key=&quot;OrderNumber&quot; value=&quot;61056&quot;/&gt;
+        &lt;pdata key=&quot;OrderDate&quot; value=&quot;7/16/2019&quot;/&gt;
+        &lt;pdata key=&quot;UpgradeDeviceDescription&quot; value=&quot;TestJ-BlackOnyx-32GB&quot;/&gt;
+        &lt;pdata key=&quot;ShippingTrackingNumber&quot; value=&quot;1ZW0Y5911361496530&quot;/&gt;
+        &lt;pdata key=&quot;CarrierUrl&quot; value=&quot;http://wwwapps.ups.com/WebTracking/track?HTMLVersion=5.0&amp;amp;loc=en_US&amp;amp;Requester=UPSHome&amp;amp;WBPM_lid=homepage%2Fct1.html_pnl_trk&amp;amp;track.x=Track&amp;amp;trackNums=1ZW0Y5911361496530&quot;/&gt;
+        &lt;pdata key=&quot;ShippingMethod&quot; value=&quot;UPSExpeditedNextDayAir&quot;/&gt;
+        &lt;pdata key=&quot;ShippingAddressLine1&quot; value=&quot;One Ravinia Drive&quot;/&gt;
+        &lt;pdata key=&quot;ShippingAddressLine2&quot; value=&quot;opp: perimeter mall&quot;/&gt;
+        &lt;pdata key=&quot;ShippingAddressLine3&quot; value=&quot;BLOCK #3&quot;/&gt;
+        &lt;pdata key=&quot;ShippingCityName&quot; value=&quot;Atlanta&quot;/&gt;
+        &lt;pdata key=&quot;ShippingStateCode&quot; value=&quot;GA&quot;/&gt;
+        &lt;pdata key=&quot;ShippingZipCode&quot; value=&quot;30346&quot;/&gt;
+        &lt;pdata key=&quot;ShippingCountry&quot; value=&quot;US&quot;/&gt;
+      &lt;/email&gt;
+    &lt;/list&gt;
+  &lt;/template&gt;
+&lt;/batch&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">xml xmldata2 = HistoryData.xmldata1</span>
+  
+  <span class="lead-duration duration">006ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print xmldata2</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>14:36:42.917 [print] &lt;batch xmlns:pfx=&quot;http://services.tmobile.com/csi/email&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; profile=&quot;HSOS&quot;&gt;
+  &lt;template&gt;
+    &lt;content mfile=&quot;body.html&quot; ref=&quot;ORDERSHIPPEDNOTRADEIN&quot; type=&quot;text/html&quot;/&gt;
+    &lt;header&gt;
+      &lt;from address=&quot;donotreply@t-mobile.com&quot; name=&quot;T-Mobile USA&quot;/&gt;
+      &lt;reply address=&quot;donotreply@t-mobile.com&quot; name=&quot;T-Mobile USA&quot;/&gt;
+    &lt;/header&gt;
+    &lt;list&gt;
+      &lt;email id=&quot;20190716113613299ORDERSHIPPEDN&quot; id2=&quot;ORDERSHIPPEDNOTRADEIN&quot;&gt;
+        &lt;rcpt address=&quot;notifications.test.events+960698182@gmail.com&quot;/&gt;
+        &lt;pdata key=&quot;FullName&quot; value=&quot;John Legere&quot;/&gt;
+        &lt;pdata key=&quot;OrderNumber&quot; value=&quot;61056&quot;/&gt;
+        &lt;pdata key=&quot;OrderDate&quot; value=&quot;7/16/2019&quot;/&gt;
+        &lt;pdata key=&quot;UpgradeDeviceDescription&quot; value=&quot;TestJ-BlackOnyx-32GB&quot;/&gt;
+        &lt;pdata key=&quot;ShippingTrackingNumber&quot; value=&quot;1ZW0Y5911361496530&quot;/&gt;
+        &lt;pdata key=&quot;CarrierUrl&quot; value=&quot;http://wwwapps.ups.com/WebTracking/track?HTMLVersion=5.0&amp;amp;loc=en_US&amp;amp;Requester=UPSHome&amp;amp;WBPM_lid=homepage%2Fct1.html_pnl_trk&amp;amp;track.x=Track&amp;amp;trackNums=1ZW0Y5911361496530&quot;/&gt;
+        &lt;pdata key=&quot;ShippingMethod&quot; value=&quot;UPSExpeditedNextDayAir&quot;/&gt;
+        &lt;pdata key=&quot;ShippingAddressLine1&quot; value=&quot;One Ravinia Drive&quot;/&gt;
+        &lt;pdata key=&quot;ShippingAddressLine2&quot; value=&quot;opp: perimeter mall&quot;/&gt;
+        &lt;pdata key=&quot;ShippingAddressLine3&quot; value=&quot;BLOCK #3&quot;/&gt;
+        &lt;pdata key=&quot;ShippingCityName&quot; value=&quot;Atlanta&quot;/&gt;
+        &lt;pdata key=&quot;ShippingStateCode&quot; value=&quot;GA&quot;/&gt;
+        &lt;pdata key=&quot;ShippingZipCode&quot; value=&quot;30346&quot;/&gt;
+        &lt;pdata key=&quot;ShippingCountry&quot; value=&quot;US&quot;/&gt;
+      &lt;/email&gt;
+    &lt;/list&gt;
+  &lt;/template&gt;
+&lt;/batch&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualFullName = karate.xmlPath(xmldata1, '/batch/template/list/email/pdata[@key = &quot;FullName&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">016ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualFullName:&quot; + actualFullName</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>14:36:42.943 [print] ActualFullName:John Legere</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualOrderNumber = karate.xmlPath(xmldata1, '/batch/template/list/email/pdata[@key = &quot;OrderNumber&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualFullName:&quot; + actualOrderNumber</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>14:36:42.956 [print] ActualFullName:61056</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualOrderDate = karate.xmlPath(xmldata1, '/batch/template/list/email/pdata[@key = &quot;OrderDate&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">034ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualOrderDate:&quot; + actualOrderDate</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details">
+        <pre>14:36:42.992 [print] ActualOrderDate:7/16/2019</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualUpgradeDeviceDescription = karate.xmlPath(xmldata1, '/batch/template/list/email/pdata[@key = &quot;UpgradeDeviceDescription&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualUpgradeDeviceDescription:&quot; + actualUpgradeDeviceDescription</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>14:36:42.998 [print] ActualUpgradeDeviceDescription:TestJ-BlackOnyx-32GB</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualShippingTrackingNumber = karate.xmlPath(xmldata1, '/batch/template/list/email/pdata[@key = &quot;ShippingTrackingNumber&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualShippingTrackingNumber:&quot; + actualShippingTrackingNumber</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>14:36:43.003 [print] ActualShippingTrackingNumber:1ZW0Y5911361496530</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualShippingMethod = karate.xmlPath(xmldata1, '/batch/template/list/email/pdata[@key = &quot;ShippingMethod&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualShippingMethod:&quot; + actualShippingMethod</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>14:36:43.015 [print] ActualShippingMethod:UPSExpeditedNextDayAir</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualShippingAddressLine1 = karate.xmlPath(xmldata1, '/batch/template/list/email/pdata[@key = &quot;ShippingAddressLine1&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualShippingAddressLine1:&quot; + actualShippingAddressLine1</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-33">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details">
+        <pre>14:36:43.025 [print] ActualShippingAddressLine1:One Ravinia Drive</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualShippingAddressLine2 = karate.xmlPath(xmldata1, '/batch/template/list/email/pdata[@key = &quot;ShippingAddressLine2&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">006ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualShippingAddressLine2:&quot; + actualShippingAddressLine2</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-34">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-34" class="collapse collapsable-details">
+        <pre>14:36:43.035 [print] ActualShippingAddressLine2:opp: perimeter mall</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualShippingAddressLine3 = karate.xmlPath(xmldata1, '/batch/template/list/email/pdata[@key = &quot;ShippingAddressLine3&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualShippingAddressLine3:&quot; + actualShippingAddressLine3</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details">
+        <pre>14:36:43.045 [print] ActualShippingAddressLine3:BLOCK #3</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualShippingCityName = karate.xmlPath(xmldata1, '/batch/template/list/email/pdata[@key = &quot;ShippingCityName&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualShippingCityName:&quot; + actualShippingCityName</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-36" class="collapse collapsable-details">
+        <pre>14:36:43.053 [print] ActualShippingCityName:Atlanta</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualShippingStateCode = karate.xmlPath(xmldata1, '/batch/template/list/email/pdata[@key = &quot;ShippingStateCode&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualShippingStateCode:&quot; + actualShippingStateCode</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-37">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-37" class="collapse collapsable-details">
+        <pre>14:36:43.061 [print] ActualShippingStateCode:GA</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualShippingZipCode = karate.xmlPath(xmldata1, '/batch/template/list/email/pdata[@key = &quot;ShippingZipCode&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">006ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualShippingZipCode:&quot; + actualShippingZipCode</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-38">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-38" class="collapse collapsable-details">
+        <pre>14:36:43.071 [print] ActualShippingZipCode:30346</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualShippingCountry = karate.xmlPath(xmldata1, '/batch/template/list/email/pdata[@key = &quot;ShippingCountry&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualShippingCountry:&quot; + actualShippingCountry</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-39">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-39" class="collapse collapsable-details">
+        <pre>14:36:43.079 [print] ActualShippingCountry:US</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualTemplateId = karate.xmlPath(xmldata1, '/batch/template/content/@ref')</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualTemplateId:&quot; + actualTemplateId</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-40">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-40" class="collapse collapsable-details">
+        <pre>14:36:43.089 [print] ActualTemplateId:ORDERSHIPPEDNOTRADEIN</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualFullName_1 = karate.xmlPath(xmldata2, '/batch/template/list/email/pdata[@key = &quot;FullName&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">017ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualFullName1:&quot; + actualFullName_1</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-41">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-41" class="collapse collapsable-details">
+        <pre>14:36:43.111 [print] ActualFullName1:John Legere</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualOrderNumber_1 = karate.xmlPath(xmldata2, '/batch/template/list/email/pdata[@key = &quot;OrderNumber&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualOrderNumber11:&quot; + actualOrderNumber_1</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-42">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-42" class="collapse collapsable-details">
+        <pre>14:36:43.114 [print] ActualOrderNumber11:61056</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualOrderDate_1 = karate.xmlPath(xmldata2, '/batch/template/list/email/pdata[@key = &quot;OrderDate&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">009ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualOrderDate1:&quot; + actualOrderDate_1</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-43">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-43" class="collapse collapsable-details">
+        <pre>14:36:43.124 [print] ActualOrderDate1:7/16/2019</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualUpgradeDeviceDescription_1 = karate.xmlPath(xmldata2, '/batch/template/list/email/pdata[@key = &quot;UpgradeDeviceDescription&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualUpgradeDeviceDescription1:&quot; + actualUpgradeDeviceDescription_1</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-44">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-44" class="collapse collapsable-details">
+        <pre>14:36:43.128 [print] ActualUpgradeDeviceDescription1:TestJ-BlackOnyx-32GB</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualShippingTrackingNumber_1 = karate.xmlPath(xmldata2, '/batch/template/list/email/pdata[@key = &quot;ShippingTrackingNumber&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">019ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualShippingTrackingNumber1:&quot; + actualShippingTrackingNumber_1</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-45">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-45" class="collapse collapsable-details">
+        <pre>14:36:43.148 [print] ActualShippingTrackingNumber1:1ZW0Y5911361496530</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualShippingMethod_1 = karate.xmlPath(xmldata2, '/batch/template/list/email/pdata[@key = &quot;ShippingMethod&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualShippingMethod1:&quot; + actualShippingMethod_1</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-46">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-46" class="collapse collapsable-details">
+        <pre>14:36:43.154 [print] ActualShippingMethod1:UPSExpeditedNextDayAir</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualShippingAddressLine1_1 = karate.xmlPath(xmldata2, '/batch/template/list/email/pdata[@key = &quot;ShippingAddressLine1&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">017ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualShippingAddressLine1_1:&quot; + actualShippingAddressLine1_1</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-47">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-47" class="collapse collapsable-details">
+        <pre>14:36:43.175 [print] ActualShippingAddressLine1_1:One Ravinia Drive</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualShippingAddressLine2_1 = karate.xmlPath(xmldata2, '/batch/template/list/email/pdata[@key = &quot;ShippingAddressLine2&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualShippingAddressLine2_1:&quot; + actualShippingAddressLine2_1</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-48">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-48" class="collapse collapsable-details">
+        <pre>14:36:43.181 [print] ActualShippingAddressLine2_1:opp: perimeter mall</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualShippingAddressLine3_1 = karate.xmlPath(xmldata2, '/batch/template/list/email/pdata[@key = &quot;ShippingAddressLine3&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">009ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualShippingAddressLine3_1:&quot; + actualShippingAddressLine3_1</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-49">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-49" class="collapse collapsable-details">
+        <pre>14:36:43.193 [print] ActualShippingAddressLine3_1:BLOCK #3</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualShippingCityName_1 = karate.xmlPath(xmldata2, '/batch/template/list/email/pdata[@key = &quot;ShippingCityName&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualShippingCityName1:&quot; + actualShippingCityName_1</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-50">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-50" class="collapse collapsable-details">
+        <pre>14:36:43.200 [print] ActualShippingCityName1:Atlanta</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualShippingStateCode_1 = karate.xmlPath(xmldata2, '/batch/template/list/email/pdata[@key = &quot;ShippingStateCode&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualShippingStateCode1:&quot; + actualShippingStateCode_1</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-51">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-51" class="collapse collapsable-details">
+        <pre>14:36:43.205 [print] ActualShippingStateCode1:GA</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualShippingZipCode_1 = karate.xmlPath(xmldata2, '/batch/template/list/email/pdata[@key = &quot;ShippingZipCode&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">009ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualShippingZipCode1:&quot; + actualShippingZipCode_1</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-52">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-52" class="collapse collapsable-details">
+        <pre>14:36:43.217 [print] ActualShippingZipCode1:30346</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualShippingCountry1 = karate.xmlPath(xmldata2, '/batch/template/list/email/pdata[@key = &quot;ShippingCountry&quot;]/@value')</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualShippingCountry1:&quot; + actualShippingCountry1</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-53">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-53" class="collapse collapsable-details">
+        <pre>14:36:43.222 [print] ActualShippingCountry1:US</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualTemplateId1 = karate.xmlPath(xmldata2, '/batch/template/content/@ref')</span>
+  
+  <span class="lead-duration duration">013ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print &quot;ActualTemplateId1:&quot; + actualTemplateId1</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-54">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-54" class="collapse collapsable-details">
+        <pre>14:36:43.236 [print] ActualTemplateId1:ORDERSHIPPEDNOTRADEIN</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def actualShippingStateCode =   Email_Data.actualShippingStateCode</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def actualShippingCountry =   Email_Data.actualShippingCountry</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def actualTemplateId =   Email_Data.actualTemplateId</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def actualShippingStateCode_1 =   Email_Data.actualShippingStateCode_1</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def actualShippingCountry1 =   Email_Data.actualShippingCountry1</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def actualTemplateId1 =   Email_Data.actualTemplateId1</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print  ExpShipping_StateCode</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-55">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-55" class="collapse collapsable-details">
+        <pre>14:36:43.267 [print] GA</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print ExpShipping_Country</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-56">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-56" class="collapse collapsable-details">
+        <pre>14:36:43.267 [print] US</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print ExpTemplateID</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-57">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-57" class="collapse collapsable-details">
+        <pre>14:36:43.267 [print] ORDERSHIPPEDNOTRADEIN</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match actualShippingStateCode == ExpShipping_StateCode</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match actualShippingCountry == ExpShipping_Country</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match actualTemplateId == ExpTemplateID</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match actualShippingStateCode_1 == ExpShipping_StateCode</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match actualShippingCountry1 == ExpShipping_Country</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match actualTemplateId1 == ExpTemplateID</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
