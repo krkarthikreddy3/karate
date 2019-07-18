@@ -18,7 +18,7 @@ Background:
   * def history_url = history
    
    * print "history_url:"+ history_url
-  Run Karate Test 
+  # Run Karate Test 
   Scenario Outline: '<TestCase>'
   * def data = read('classpath:<Payload>.json')
     #Call DEEP SubProcess
